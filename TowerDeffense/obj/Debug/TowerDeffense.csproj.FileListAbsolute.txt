@@ -1,5 +1,0 @@
-c:\users\vladislav hadzhiyski\documents\visual studio 2013\Projects\TowerDeffense\TowerDeffense\bin\Debug\TowerDeffense.exe
-c:\users\vladislav hadzhiyski\documents\visual studio 2013\Projects\TowerDeffense\TowerDeffense\bin\Debug\TowerDeffense.pdb
-c:\users\vladislav hadzhiyski\documents\visual studio 2013\Projects\TowerDeffense\TowerDeffense\obj\Debug\TowerDeffense.csprojResolveAssemblyReference.cache
-c:\users\vladislav hadzhiyski\documents\visual studio 2013\Projects\TowerDeffense\TowerDeffense\obj\Debug\TowerDeffense.exe
-c:\users\vladislav hadzhiyski\documents\visual studio 2013\Projects\TowerDeffense\TowerDeffense\obj\Debug\TowerDeffense.pdb
