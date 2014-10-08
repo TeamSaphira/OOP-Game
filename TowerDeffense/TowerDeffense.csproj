@@ -49,28 +49,45 @@
   <ItemGroup>
     <Compile Include="AirUnit.cs" />
     <Compile Include="AirUnitRenderer.cs" />
+    <Compile Include="Box.cs" />
     <Compile Include="CollisionHandler.cs" />
     <Compile Include="EnemyAirUnit.cs" />
     <Compile Include="EnemyAirUnitRenderer.cs" />
     <Compile Include="EnemyGroundRenderer.cs" />
     <Compile Include="EnemyGroundUnit.cs" />
     <Compile Include="Engine.cs" />
+    <Compile Include="GameException.cs" />
     <Compile Include="GameMain.cs" />
     <Compile Include="GameObject.cs" />
+    <Compile Include="GamePlayfield.cs" />
     <Compile Include="GroundUnit.cs" />
     <Compile Include="GroundUnitRenderer.cs" />
+    <Compile Include="IMap.cs" />
     <Compile Include="IMoveable.cs" />
     <Compile Include="IntersectionCollisionHandler.cs" />
+    <Compile Include="InvalidBuildPositionException.cs" />
+    <Compile Include="IPlayer.cs" />
     <Compile Include="IRenderer.cs" />
+    <Compile Include="Level1Map.cs" />
+    <Compile Include="Level1Playfield.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="MapBox.cs" />
+    <Compile Include="MediumAirUnit.cs" />
+    <Compile Include="PathBox.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="PlayerAirUnit.cs" />
     <Compile Include="PlayerAirUnitRenderer.cs" />
     <Compile Include="PlayerGroundUnit.cs" />
     <Compile Include="PlayerGroundUnitRenderer.cs" />
     <Compile Include="RangeCollisionHandler.cs" />
     <Compile Include="Renderer.cs" />
+    <Compile Include="SmallAirUnit.cs" />
+    <Compile Include="Timer.cs" />
+    <Compile Include="TowerBox.cs" />
     <Compile Include="Unit.cs" />
     <Compile Include="UnitOnCreationHandler.cs" />
     <Compile Include="UnitOnDeathHandler.cs" />
+    <Compile Include="UnitSize.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
