@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TowerDeffense
 {
-    public abstract class Map : GameObject, IMap
+    public class Map : GameObject, IMap
     {
         public MapTile[,] MapTiles
         {

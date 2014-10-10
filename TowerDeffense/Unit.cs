@@ -8,7 +8,5 @@ namespace TowerDeffense
     public abstract class BattleUnit : GameObject
     {
         public event UnitOnDeathHandler OnDeath;
-
-        public event UnitOnCreationHandler OnCreation;
     }
 }

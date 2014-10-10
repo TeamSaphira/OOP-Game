@@ -5,9 +5,9 @@ using System.Text;
 
 namespace TowerDeffense
 {
-    public abstract class GamePlayfield : GameObject
+    public class GamePlayfield : GameObject
     {
-        public Map Map
+        public IMap Map
         {
             get
             {

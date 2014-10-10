@@ -49,7 +49,6 @@
   <ItemGroup>
     <Compile Include="AirUnit.cs" />
     <Compile Include="AirUnitRenderer.cs" />
-    <Compile Include="Box.cs" />
     <Compile Include="CollisionHandler.cs" />
     <Compile Include="EnemyAirUnit.cs" />
     <Compile Include="EnemyAirUnitRenderer.cs" />
@@ -68,12 +67,10 @@
     <Compile Include="InvalidBuildPositionException.cs" />
     <Compile Include="IPlayer.cs" />
     <Compile Include="IRenderer.cs" />
-    <Compile Include="Level1Map.cs" />
-    <Compile Include="Level1Playfield.cs" />
     <Compile Include="Map.cs" />
-    <Compile Include="MapBox.cs" />
+    <Compile Include="MapTile.cs" />
     <Compile Include="MediumAirUnit.cs" />
-    <Compile Include="PathBox.cs" />
+    <Compile Include="PathTile.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PlayerAirUnit.cs" />
     <Compile Include="PlayerAirUnitRenderer.cs" />
@@ -83,9 +80,8 @@
     <Compile Include="Renderer.cs" />
     <Compile Include="SmallAirUnit.cs" />
     <Compile Include="Timer.cs" />
-    <Compile Include="TowerBox.cs" />
+    <Compile Include="TowerTile.cs" />
     <Compile Include="Unit.cs" />
-    <Compile Include="UnitOnCreationHandler.cs" />
     <Compile Include="UnitOnDeathHandler.cs" />
     <Compile Include="UnitSize.cs" />
   </ItemGroup>

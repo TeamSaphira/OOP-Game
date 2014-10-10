@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TowerDeffense
 {
-    public class Level1Map : Map
+    public class TowerTile : MapTile
     {
     }
 }

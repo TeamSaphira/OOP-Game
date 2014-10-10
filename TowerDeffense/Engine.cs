@@ -7,16 +7,6 @@ namespace TowerDeffense
 {
     public class Engine
     {
-        public Renderer Renderer
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
 
         public CollisionHandler CollisionHandler
         {
@@ -40,17 +30,6 @@ namespace TowerDeffense
             }
         }
 
-        public Player Player
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
         public BattleUnit[,] BattleUnits
         {
             get
@@ -63,6 +42,28 @@ namespace TowerDeffense
         }
 
         public Timer Timer
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public IRenderer Renderer
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public IPlayer Player
         {
             get
             {
