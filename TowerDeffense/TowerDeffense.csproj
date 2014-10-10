@@ -69,7 +69,6 @@
     <Compile Include="IRenderer.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="MapTile.cs" />
-    <Compile Include="MediumAirUnit.cs" />
     <Compile Include="PathTile.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="PlayerAirUnit.cs" />
@@ -78,7 +77,6 @@
     <Compile Include="PlayerGroundUnitRenderer.cs" />
     <Compile Include="RangeCollisionHandler.cs" />
     <Compile Include="Renderer.cs" />
-    <Compile Include="SmallAirUnit.cs" />
     <Compile Include="Timer.cs" />
     <Compile Include="TowerTile.cs" />
     <Compile Include="Unit.cs" />
