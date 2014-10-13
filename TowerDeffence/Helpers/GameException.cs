@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace TowerDeffense.Helpers
+﻿namespace TowerDeffence.Helpers
 {
+    using System;
+
     public abstract class GameException : Exception
     {
     }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace TowerDeffense.Graphics
+﻿namespace TowerDeffence.Graphics
 {
     public class EnemyAirUnitRenderer : AirUnitRenderer
     {

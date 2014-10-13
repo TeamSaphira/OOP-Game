@@ -58,7 +58,6 @@
     <Compile Include="GameObjects\EnemyGroundUnit.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\GamePlayfield.cs" />
-    <Compile Include="GameObjects\GroundUnit.cs" />
     <Compile Include="GameObjects\Map.cs" />
     <Compile Include="GameObjects\MapTile.cs" />
     <Compile Include="GameObjects\PathTile.cs" />
@@ -74,6 +73,7 @@
     <Compile Include="Graphics\PlayerAirUnitRenderer.cs" />
     <Compile Include="Graphics\PlayerGroundUnitRenderer.cs" />
     <Compile Include="Graphics\Renderer.cs" />
+    <Compile Include="GameObjects\GroundUnit.cs" />
     <Compile Include="Helpers\BattleUnitDecorator.cs" />
     <Compile Include="Helpers\CollisionHandler.cs" />
     <Compile Include="Helpers\DamageUpgradeDecorator.cs" />
@@ -94,6 +94,9 @@
     <Compile Include="Interfaces\IUserInputHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

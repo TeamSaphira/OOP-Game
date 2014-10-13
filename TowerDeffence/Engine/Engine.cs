@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace TowerDeffense.Engine
+﻿namespace TowerDeffence.Engine
 {
     using Helpers;
     using GameObjects;
@@ -101,7 +96,7 @@ namespace TowerDeffense.Engine
             }
         }
 
-        public InteractionManager InteractionManager
+        public IInteractionManager InteractionManager
         {
             get
             {
