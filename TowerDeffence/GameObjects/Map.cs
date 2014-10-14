@@ -2,7 +2,7 @@
 {
     using Interfaces;
 
-    public class Map : GameObject, IMap
+    public class EarthMap : GameObject, IMap
     {
         public MapTile[,] MapTiles
         {

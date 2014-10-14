@@ -1,6 +1,6 @@
 ﻿namespace TowerDeffence.Graphics
 {
-    public abstract class AirUnitRenderer : Renderer
+    public abstract class AirUnitRenderer : ScreenRenderer
     {
     }
 }

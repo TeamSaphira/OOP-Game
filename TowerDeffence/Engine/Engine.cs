@@ -3,6 +3,7 @@
     using Helpers;
     using GameObjects;
     using Interfaces;
+    using Graphics;
 
     public class Engine
     {
@@ -16,6 +17,7 @@
             }
             set
             {
+                
             }
         }
 
@@ -30,51 +32,7 @@
             }
         }
 
-        public IRenderer Renderer
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public Timer Timer
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public EnemyUnitFactory EnemyUnitFactory
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
         public GamePlayfield GamePlayfield
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public CollisionHandler CollisionHandler
         {
             get
             {
@@ -97,6 +55,39 @@
         }
 
         public IInteractionManager InteractionManager
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public TowerDeffence.Interfaces.ICollisionHandler CollisionHandler
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public TowerDeffence.Interfaces.IEnemyUnitFactory EnemyUnitFactory
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
+        public TowerDeffence.Interfaces.IRenderer Renderer
         {
             get
             {

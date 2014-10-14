@@ -1,6 +1,8 @@
 ﻿namespace TowerDeffence.Helpers
 {
-    public abstract class CollisionHandler
+    using Interfaces;
+
+    public abstract class CollisionHandler : ICollisionHandler
     {
     }
 }
