@@ -73,7 +73,7 @@
     <Position X="1.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
-      <FileName>GameObjects\Map.cs</FileName>
+      <FileName>GameObjects\EarthMap.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
