@@ -3,7 +3,6 @@
     using Helpers;
     using GameObjects;
     using Interfaces;
-    using Graphics;
 
     public class Engine
     {

@@ -7,18 +7,24 @@
 
     public class EnemyUnitFactory : IEnemyUnitFactory
     {
-        public EnemyAirUnit CreateEnemyAirUnit(/* params */)
+        public EnemyGroundUnit CreateEnemyGroundUnit(params object[] args)
         {
-            return new EnemyAirUnit(/* params */);
+            throw new System.NotImplementedException();
         }
 
-        public ICollection<EnemyAirUnit> CreateEnemyAirUnitByCount(int count)
+        public PlayerGroundUnit CreatePlayerGroundUnit(params object[] args)
         {
-            for (int i = 0; i < count; i++)
-            {
-                
-            }
-            return null;
+            throw new System.NotImplementedException();
+        }
+
+        public EnemyAirUnit CreateEnemyAirUnit(params object[] args)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public PlayerAirUnit CreatePlayerAirUnit(params object[] args)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

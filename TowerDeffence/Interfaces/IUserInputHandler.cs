@@ -2,5 +2,6 @@
 {
     public interface IUserInputHandler
     {
+        // todo add events
     }
 }
