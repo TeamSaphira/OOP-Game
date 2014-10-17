@@ -2,21 +2,10 @@
 {
     public abstract class AirUnit : BattleUnit
     {
-        protected AirUnit(UnitSize size, int health, int price, double speed)
-            : base(size, health, price, speed)
+        protected AirUnit(UnitSize size, int health, int price)
+            : base(size, health, price)
         {
             
-        }
-
-        public UnitSize UnitSize
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
         }
     }
 }

@@ -94,6 +94,7 @@
     <Compile Include="Interfaces\IBattleUnit.cs" />
     <Compile Include="Interfaces\ICollisionHandler.cs" />
     <Compile Include="Interfaces\IEnemyUnitFactory.cs" />
+    <Compile Include="Interfaces\IFireable.cs" />
     <Compile Include="Interfaces\IInteractionManager.cs" />
     <Compile Include="Interfaces\IMap.cs" />
     <Compile Include="Interfaces\IMoveable.cs" />

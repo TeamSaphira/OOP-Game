@@ -4,8 +4,8 @@
 
     public class PlayerGroundUnit : GroundUnit
     {
-        public PlayerGroundUnit(UnitSize size, int health, int price, double speed)
-            : base(size, health, price, speed)
+        public PlayerGroundUnit(UnitSize size, int health, int price)
+            : base(size, health, price)
         {
             
         }

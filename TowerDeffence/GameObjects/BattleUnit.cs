@@ -7,12 +7,12 @@
     {
         public event UnitOnDeathHandler OnDeath;
 
-        protected BattleUnit(UnitSize size, int health, int price, double speed)
+        protected BattleUnit(UnitSize size, int health, int price, Position position)
+            : base(position)
         {
             Size = size;
             Health = health;
             Price = price;
-            Speed = speed;
         }
 
         public UnitSize Size { get; private set; }
@@ -23,8 +23,5 @@
         public int Health { get; private set; }
 
         public int Price { get; private set; }
-
-
-        public double Speed { get; private set; }
     }
 }

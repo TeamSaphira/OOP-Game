@@ -4,15 +4,11 @@
 
     public abstract class GameObject
     {
-        public Position Position
+        protected GameObject(Position position)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            this.Position = position;
         }
+
+        public Position Position { get; protected set; }
     }
 }

@@ -4,8 +4,8 @@
 
     public class PlayerAirUnit : AirUnit
     {
-        public PlayerAirUnit(UnitSize size, int health, int price, double speed)
-            : base(size, health, price, speed)
+        public PlayerAirUnit(UnitSize size, int health, int price)
+            : base(size, health, price)
         {
             
         }
