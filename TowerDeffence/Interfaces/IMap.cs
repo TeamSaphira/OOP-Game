@@ -4,10 +4,10 @@
 
     public interface IMap
     {
-        //MapTile[,] MapTiles
-        //{
-        //    get;
-        //    set;
-        //}
+        MapTile[,] MapTiles
+        {
+            get;
+            set;
+        }
     }
 }
