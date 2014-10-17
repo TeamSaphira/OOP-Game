@@ -95,6 +95,7 @@
     <Compile Include="Interfaces\IUpgradeable.cs" />
     <Compile Include="Interfaces\IUserInputHandler.cs" />
     <Compile Include="Helpers\Position.cs" />
+    <Compile Include="Helpers\KeyboardMouseUserInput.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

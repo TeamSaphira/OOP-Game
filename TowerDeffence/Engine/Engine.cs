@@ -3,10 +3,15 @@
     using Helpers;
     using GameObjects;
     using Interfaces;
+    using Graphics;
 
     public class Engine
     {
-
+        private IUserInputHandler controller;
+        public Engine(IUserInputHandler controller)
+        {
+            this.controller = controller;
+        }
 
         public IPlayer Player
         {
@@ -17,17 +22,6 @@
             set
             {
                 
-            }
-        }
-
-        public IUserInputHandler UserInputController
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
             }
         }
 

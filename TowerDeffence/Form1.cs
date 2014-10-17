@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TowerDeffence.Engine;
+using TowerDeffence.Interfaces;
+using TowerDeffence.Helpers;
 
 namespace TowerDeffence
 {
@@ -15,6 +18,11 @@ namespace TowerDeffence
         public MainForm()
         {
             InitializeComponent();
+        }
+        private void MainForm_Load(object sender, EventArgs s)
+        {
+            IUserInputHandler controller = new KeyboardMouseUserInput(this);
+            Engine.Engine engine = new Engine.Engine(controller);
         }
     }
 }
