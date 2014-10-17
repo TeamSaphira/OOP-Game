@@ -16,18 +16,29 @@ namespace TowerDeffence.GameObjects
 
         public void Move(double speed, char direction)
         {
-            // r l
-            if (direction.Equals('r')) // direction == 'r'
+            // check 
+            bool canMove = false;
+            if()
+            if (/* can move */)
             {
-                // move right
-                // row + 1 col + 1
+                if (direction.Equals('r')) // direction == 'r'
+                {
+                    // move right
+                    // row + 1 col + 1
+                }
+                else if (direction.Equals('l'))
+                {
+                    // move left
+                    // row + 1 col - 1
+                    throw new System.NotImplementedException();
+                }
             }
             else
             {
-                // move left
-                // row + 1 col - 1
-                throw new System.NotImplementedException();
+                
             }
+            // r l
+
             throw new System.NotImplementedException();
         }
 
