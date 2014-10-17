@@ -1,0 +1,11 @@
+<? xml version="1.0" ?>
+<GameLevels>
+	<Level1>
+		<Units>
+			<Small>5</Small>
+		</Units>
+		<UnitsPrice>
+			<Small>100</Small>
+		</UnitsPrice>
+	</Level1>
+</GameLevels>

@@ -7,7 +7,10 @@
         UnitSize Size
         {
             get;
-            set;
         }
+
+        int Health { get; }
+
+        int Price { get; }
     }
 }

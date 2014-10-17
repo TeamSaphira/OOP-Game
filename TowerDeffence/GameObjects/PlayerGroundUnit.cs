@@ -4,6 +4,11 @@
 
     public class PlayerGroundUnit : GroundUnit
     {
+        public PlayerGroundUnit(UnitSize size, int health, int price, double speed)
+            : base(size, health, price, speed)
+        {
+            
+        }
         public void Upgrade()
         {
             throw new System.NotImplementedException();

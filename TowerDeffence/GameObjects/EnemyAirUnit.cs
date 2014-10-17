@@ -4,17 +4,12 @@
 
     public class EnemyAirUnit : AirUnit, IMoveable
     {
-        public double Speed
+        public EnemyAirUnit(UnitSize size, int health, int price, double speed)
+            : base(size, health, price, speed)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-                throw new System.NotImplementedException();
-            }
         }
+
+        public double Speed { get; set; }
 
         public void Move(double speed)
         {

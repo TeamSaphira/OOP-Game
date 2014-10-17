@@ -4,9 +4,10 @@
 
     public class PlayerAirUnit : AirUnit
     {
-        public void Upgrade()
+        public PlayerAirUnit(UnitSize size, int health, int price, double speed)
+            : base(size, health, price, speed)
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public override void Draw()

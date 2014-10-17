@@ -1,8 +1,10 @@
 ﻿namespace TowerDeffence.GameObjects
 {
+    using Helpers;
+
     public abstract class GameObject
     {
-        public TowerDeffence.Helpers.Position Position
+        public Position Position
         {
             get
             {

@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace TowerDeffence
 {
-    static class Program
+    static class GameWindowScript
     {
         /// <summary>
         /// The main entry point for the application.

@@ -3,7 +3,7 @@
   <Class Name="TowerDeffence.Engine.Engine" Collapsed="true">
     <Position X="13" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAAAAAAAAAAAoCAAAAAAAAQAAAAAAAAAAACAAQIAAAA=</HashCode>
+      <HashCode>RAAAAAAAAAAAoCAAAAAAQAQAAAAAAAAAAACAAQIAAAI=</HashCode>
       <FileName>Engine\Engine.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -27,7 +27,7 @@
   <Class Name="TowerDeffence.GameObjects.BattleUnit" Collapsed="true">
     <Position X="7" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAggAAAAAAAIAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAACAAAAQAAggAAAAAAAIABAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\BattleUnit.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -54,9 +54,6 @@
       <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\GameObject.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Position" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="TowerDeffence.GameObjects.GamePlayfield" Collapsed="true">
     <Position X="19.25" Y="4" Width="1.5" />
@@ -189,7 +186,7 @@
   <Class Name="TowerDeffence.Engine.InteractionManager" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="23.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
       <FileName>Engine\InteractionManager.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
@@ -211,7 +208,7 @@
   <Interface Name="TowerDeffence.Interfaces.IBattleUnit" Collapsed="true">
     <Position X="21.75" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAACAAAAQAAgAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IBattleUnit.cs</FileName>
     </TypeIdentifier>
   </Interface>
@@ -263,7 +260,7 @@
   <Interface Name="TowerDeffence.Interfaces.IInteractionManager" Collapsed="true">
     <Position X="16" Y="9.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IInteractionManager.cs</FileName>
     </TypeIdentifier>
   </Interface>

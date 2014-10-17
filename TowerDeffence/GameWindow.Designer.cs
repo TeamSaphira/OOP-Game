@@ -28,7 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.testTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
+            // 
+            // testTextBox
+            // 
+            this.testTextBox.Location = new System.Drawing.Point(123, 119);
+            this.testTextBox.Multiline = true;
+            this.testTextBox.Name = "testTextBox";
+            this.testTextBox.Size = new System.Drawing.Size(515, 119);
+            this.testTextBox.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -36,15 +45,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.testTextBox);
             this.Name = "MainForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Saphira Deffense";
+            this.Load += new System.EventHandler(this.Test);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox testTextBox;
     }
 }
 

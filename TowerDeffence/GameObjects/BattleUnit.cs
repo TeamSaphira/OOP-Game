@@ -1,37 +1,30 @@
 ﻿namespace TowerDeffence.GameObjects
 {
     using Interfaces;
-    using GameObjects;
     using Helpers;
 
     public abstract class BattleUnit : GameObject, IBattleUnit, IDrawable
     {
         public event UnitOnDeathHandler OnDeath;
 
-        public UnitSize Size
+        protected BattleUnit(UnitSize size, int health, int price, double speed)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-                throw new System.NotImplementedException();
-            }
+            Size = size;
+            Health = health;
+            Price = price;
+            Speed = speed;
         }
 
-        public static int Image
-        {
-            // todo sprite  load image in static constructor
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public UnitSize Size { get; private set; }
 
         public abstract void Draw();
+
+
+        public int Health { get; private set; }
+
+        public int Price { get; private set; }
+
+
+        public double Speed { get; private set; }
     }
 }
