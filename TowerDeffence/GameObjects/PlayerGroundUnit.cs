@@ -2,16 +2,27 @@
 {
     using Interfaces;
 
-    public class PlayerGroundUnit : GroundUnit
+    public abstract class PlayerGroundUnit : GroundUnit, IUpgradeable
     {
-        public void Upgrade()
+        protected enum TowerState { idle, loadin, shot };
+
+        protected TowerState towerState;
+
+        protected float range, attackRate;
+        protected int level, damage, baseCost;
+        protected EnemyGroundUnit enemy;
+
+        //returns amount of damage of this tower
+        public int getDamage()
         {
-            throw new System.NotImplementedException();
+            return damage;
+        }
+        //returns building cost of this tower
+        public int getCost()
+        {
+            return baseCost;
         }
 
-        public override void Draw()
-        {
-            throw new System.NotImplementedException();
-        }
+        public abstract void calculateDamage();
     }
 }
