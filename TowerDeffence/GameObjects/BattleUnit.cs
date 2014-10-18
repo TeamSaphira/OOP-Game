@@ -7,26 +7,21 @@
     {
         public event UnitOnDeathHandler OnDeath;
 
-        public Position Position
+        protected BattleUnit(UnitSize size, int health, int price, Position position)
+            : base(position)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            Size = size;
+            Health = health;
+            Price = price;
         }
 
-        public UnitSize UnitSize
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public UnitSize Size { get; private set; }
+
+        public abstract void Draw();
+
+
+        public int Health { get; private set; }
+
+        public int Price { get; private set; }
     }
 }

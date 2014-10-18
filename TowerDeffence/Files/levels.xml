@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<GameLevels>
+	<Level1>
+		<Enemies>
+			<Small>5</Small>
+			<Medium>1</Medium>
+		</Enemies>
+		<EnemiesPrice>
+			<Small>100</Small>
+			<Medium>125</Medium>
+		</EnemiesPrice>
+	</Level1>
+</GameLevels>
