@@ -2,7 +2,14 @@
 {
     using Interfaces;
 
-    public sealed class InteractionManager : IInteractionManager
+    public class InteractionManager : IInteractionManager
     {
+        public void ShowGameMenu()
+        {
+            //load menu data
+            // init menu data
+            // show menu
+            throw new System.NotImplementedException();
+        }
     }
 }

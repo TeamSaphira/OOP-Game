@@ -1,100 +1,58 @@
 ﻿namespace TowerDeffence.Engine
 {
+    using System;
+
     using Helpers;
     using GameObjects;
     using Interfaces;
 
     public class Engine
     {
-
-
-        public IPlayer Player
+        public Engine(IPlayer player, IUserInputHandler userInputController, GamePlayfield gamePlayfield, BattleUnitDecorator battleUnitDecorator, IInteractionManager interactionManager, ICollisionHandler collisionHandler, IEnemyUnitFactory enemyUnitFactory, IRenderer renderer)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-                
-            }
+            Player = player;
+            UserInputController = userInputController;
+            GamePlayfield = gamePlayfield;
+            BattleUnitDecorator = battleUnitDecorator;
+            InteractionManager = interactionManager;
+            CollisionHandler = collisionHandler;
+            EnemyUnitFactory = enemyUnitFactory;
+            Renderer = renderer;
         }
 
-        public IUserInputHandler UserInputController
+        public IPlayer Player { get; private set; }
+
+        public IUserInputHandler UserInputController { get; private set; }
+
+        public GamePlayfield GamePlayfield { get; private set; }
+
+        public BattleUnitDecorator BattleUnitDecorator { get; private set; }
+
+        public IInteractionManager InteractionManager { get; set; }
+
+        public ICollisionHandler CollisionHandler { get; private set; }
+
+        public IEnemyUnitFactory EnemyUnitFactory { get; private set; }
+
+        public IRenderer Renderer { get; private set; }
+
+        public void InitGame()
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            // load game global files
+            throw new NotImplementedException();
         }
 
-        public GamePlayfield GamePlayfield
+        public void InitLevel(int level)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            //  load data
+            // init data
         }
 
-        public BattleUnitDecorator BattleUnitDecorator
+        public void Run()
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public IInteractionManager InteractionManager
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public TowerDeffence.Interfaces.ICollisionHandler CollisionHandler
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public TowerDeffence.Interfaces.IEnemyUnitFactory EnemyUnitFactory
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public TowerDeffence.Interfaces.IRenderer Renderer
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            InitGame();
+            InteractionManager.ShowGameMenu();
+            // gameMenu start onclick LoadLevel(1)
         }
     }
 }
