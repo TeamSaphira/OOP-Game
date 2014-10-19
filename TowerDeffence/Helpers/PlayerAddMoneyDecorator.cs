@@ -1,20 +1,28 @@
 ﻿namespace TowerDeffence.Helpers
 {
     using Interfaces;
+    using System;
 
     public class PlayerAddMoneyDecorator : PlayerDecorator
     {
-        public PlayerAddMoneyDecorator(IPlayer player, double amount)
+        public PlayerAddMoneyDecorator(IPlayer player, double differenceIncrease)
             : base(player)
         {
-            Amount = amount;
+            DifferenceIncrease = differenceIncrease;
         }
 
-        protected double Amount { get; set; }
+        protected double DifferenceIncrease { get; set; }
 
-        public override double Money
+        public override double Balance
         {
-            get { return this.Player.Money + Amount; }
+            get 
+            {
+                if (DifferenceIncrease < 0)
+                {
+                    throw new InvalidOperationException("you can't enter a number less than zero");
+                }
+                return this.Player.Balance + DifferenceIncrease;
+            }
         }
     }
 }
