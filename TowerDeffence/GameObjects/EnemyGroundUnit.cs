@@ -1,4 +1,5 @@
-﻿using TowerDeffence.Helpers;
+﻿using System;
+using TowerDeffence.Helpers;
 
 namespace TowerDeffence.GameObjects
 {
@@ -14,31 +15,19 @@ namespace TowerDeffence.GameObjects
 
         public double Speed { get; set; }
 
-        public void Move(double speed, char direction)
+        public void Move(char direction)
         {
+            double enemyX = this.Position.X;
+            double enemyY = this.Position.Y;
 
-            // check 
-            bool canMove = false;
-            if()
-            if (/* can move */)
+            switch (direction)
             {
-                if (direction.Equals('r')) // direction == 'r'
-                {
-                    // move right
-                    // row + 1 col + 1
-                }
-                else if (direction.Equals('l'))
-                {
-                    // move left
-                    // row + 1 col - 1
-                    throw new System.NotImplementedException();
-                }
+                case 'u': this.Position = new Position(enemyX - 1, enemyY); break; // direction 'u' = up
+                case 'd': this.Position = new Position(enemyX + 1, enemyY); break; // direction 'd' = down
+                case 'l': this.Position = new Position(enemyX, enemyY - 1); break; // direction 'l' = left
+                case 'r': this.Position = new Position(enemyX, enemyY + 1); break; // direction 'r' = right
+                default: throw new InvalidOperationException("The provided direction is not valid");
             }
-            else
-            {
-                
-            }
-            // r l
 
             throw new System.NotImplementedException();
         }

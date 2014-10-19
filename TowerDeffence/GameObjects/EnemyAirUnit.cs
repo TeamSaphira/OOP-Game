@@ -15,10 +15,17 @@ namespace TowerDeffence.GameObjects
 
         public double Speed { get; set; }
 
-        public void Move(double speed, char direction)
+        public void Move(char direction)
         {
-            
-            throw new System.NotImplementedException();
+            double enemyX = this.Position.X;
+            double enemyY = this.Position.Y;
+
+            if (direction.Equals('d')) // direction d = down
+            {
+                this.Position = new Position(enemyX + 1, enemyY);
+            }
+
+            throw new InvalidOperationException("The provided direction is not valid.");
         }
 
         public override void Draw()

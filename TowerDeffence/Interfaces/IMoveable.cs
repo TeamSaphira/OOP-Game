@@ -8,6 +8,6 @@
             set;
         }
 
-        void Move(double speed, char direction);
+        void Move(char direction);
     }
 }

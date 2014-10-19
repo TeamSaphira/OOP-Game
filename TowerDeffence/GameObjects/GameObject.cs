@@ -4,6 +4,11 @@
 
     public abstract class GameObject
     {
+        protected GameObject()
+        {
+            this.Position = new Position(0,0);
+        }
+
         protected GameObject(Position position)
         {
             this.Position = position;
