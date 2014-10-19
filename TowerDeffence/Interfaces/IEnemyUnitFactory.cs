@@ -1,21 +1,9 @@
-﻿using System.Collections.Generic;
-
-namespace TowerDeffence.Interfaces
+﻿namespace TowerDeffence.Interfaces
 {
-    using GameObjects;
-<<<<<<< HEAD
+    using System.Collections.Generic;
 
-    public interface IEnemyUnitFactory
-    {
-        EnemyGroundUnit CreateEnemyGroundUnit(params object[] args);
-
-        PlayerGroundUnit CreatePlayerGroundUnit(params object[] args);
-
-        EnemyAirUnit CreateEnemyAirUnit(params object[] args);
-
-        PlayerAirUnit CreatePlayerAirUnit(params object[] args);
-=======
     using Helpers;
+    using GameObjects;
 
     public interface IEnemyUnitFactory
     {
@@ -26,6 +14,5 @@ namespace TowerDeffence.Interfaces
         EnemyAirUnit CreateEnemyAirUnit(UnitSize size, int health, int price, double speed, Position position);
 
         ICollection<EnemyAirUnit> CreateEnemyAirUnitByCount(UnitSize size, int health, int price, double speed, Position position, int count);
->>>>>>> enemyUnits
     }
 }

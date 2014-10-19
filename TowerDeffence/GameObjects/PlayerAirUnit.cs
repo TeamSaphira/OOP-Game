@@ -1,19 +1,14 @@
-﻿namespace TowerDeffence.GameObjects
+﻿using TowerDeffence.Helpers;
+
+namespace TowerDeffence.GameObjects
 {
     using Interfaces;
 
     public class PlayerAirUnit : AirUnit
     {
-<<<<<<< HEAD
-        public void Upgrade()
+        public PlayerAirUnit(UnitSize size, int health, int price, Position position)
+            : base(size, health, price, position)
         {
-            throw new System.NotImplementedException();
-=======
-        public PlayerAirUnit(UnitSize size, int health, int price)
-            : base(size, health, price)
-        {
-            
->>>>>>> enemyUnits
         }
 
         public override void Draw()

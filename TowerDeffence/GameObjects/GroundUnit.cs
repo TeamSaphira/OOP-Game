@@ -1,7 +1,7 @@
-﻿using TowerDeffence.Helpers;
-
-namespace TowerDeffence.GameObjects
+﻿namespace TowerDeffence.GameObjects
 {
+    using Helpers;
+
     public abstract class GroundUnit : BattleUnit
     {
         protected GroundUnit(UnitSize size, int health, int price, Position position)

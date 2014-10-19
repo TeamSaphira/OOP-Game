@@ -7,26 +7,6 @@
 
     public class EnemyUnitFactory : IEnemyUnitFactory
     {
-<<<<<<< HEAD
-        public EnemyGroundUnit CreateEnemyGroundUnit(params object[] args)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public PlayerGroundUnit CreatePlayerGroundUnit(params object[] args)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public EnemyAirUnit CreateEnemyAirUnit(params object[] args)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public PlayerAirUnit CreatePlayerAirUnit(params object[] args)
-        {
-            throw new System.NotImplementedException();
-=======
 
         public EnemyGroundUnit CreateEnemyGroundUnit(UnitSize size, int health, int price, double speed, Position position)
         {
@@ -61,7 +41,6 @@
                 units.Add(airUnit);
             }
             return units;
->>>>>>> enemyUnits
         }
     }
 }

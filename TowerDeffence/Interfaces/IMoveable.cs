@@ -8,10 +8,6 @@
             set;
         }
 
-<<<<<<< HEAD
-        void Move(double speed);
-=======
         void Move(char direction);
->>>>>>> enemyUnits
     }
 }

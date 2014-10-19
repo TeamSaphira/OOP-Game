@@ -1,17 +1,16 @@
-﻿namespace TowerDeffence.GameObjects
+﻿using TowerDeffence.Helpers;
+
+namespace TowerDeffence.GameObjects
 {
     using Interfaces;
 
     public class PlayerGroundUnit : GroundUnit
     {
-<<<<<<< HEAD
-=======
-        public PlayerGroundUnit(UnitSize size, int health, int price)
-            : base(size, health, price)
+        public PlayerGroundUnit(UnitSize size, int health, int price, Position position)
+            : base(size, health, price, position)
         {
             
         }
->>>>>>> enemyUnits
         public void Upgrade()
         {
             throw new System.NotImplementedException();

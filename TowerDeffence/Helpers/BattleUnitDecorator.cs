@@ -5,14 +5,11 @@
 
     public abstract class BattleUnitDecorator : IBattleUnit
     {
-<<<<<<< HEAD
-=======
         protected BattleUnitDecorator()
         {
             
         }
 
->>>>>>> enemyUnits
         public UnitSize Size
         {
             get
@@ -24,8 +21,6 @@
                 throw new System.NotImplementedException();
             }
         }
-<<<<<<< HEAD
-=======
 
 
         public int Health
@@ -42,6 +37,5 @@
         {
             get { throw new System.NotImplementedException(); }
         }
->>>>>>> enemyUnits
     }
 }
