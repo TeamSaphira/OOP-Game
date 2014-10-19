@@ -8,6 +8,7 @@
         event EventHandler PressedC;
         event EventHandler PressedV;
         event EventHandler OnLeftMouseClick;
+        event EventHandler OnDoubleMouseClick;
         event EventHandler OnRightMouseClick;
     }
 }
