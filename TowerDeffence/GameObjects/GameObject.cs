@@ -1,16 +1,23 @@
 ﻿namespace TowerDeffence.GameObjects
 {
-    public abstract class GameObject
-    {
-        public TowerDeffence.Helpers.Position Position
+    using Helpers;
+
+
+    
+        public abstract class GameObject
         {
-            get
+
+            protected GameObject()
             {
-                throw new System.NotImplementedException();
+                this.Position = new Position(0, 0);
             }
-            set
+
+            protected GameObject(Position position)
             {
+                this.Position = position;
             }
+
+            public Position Position { get; protected set; }
         }
-    }
+      
 }

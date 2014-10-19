@@ -2,26 +2,18 @@
 {
     public struct Position
     {
-        public double X
+        public Position(double x, double y) : this()
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            this.X = x;
+            this.Y = y;
         }
+
+        public double X {get; set;}
 
         public double Y
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
     }
 }

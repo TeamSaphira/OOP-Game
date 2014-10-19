@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="GameObjects\AirUnit.cs" />
     <Compile Include="GameObjects\BattleUnit.cs" />
+    <Compile Include="GameObjects\Bullet.cs" />
     <Compile Include="GameObjects\EnemyAirUnit.cs" />
     <Compile Include="GameObjects\EnemyGroundUnit.cs" />
     <Compile Include="GameObjects\GameObject.cs" />

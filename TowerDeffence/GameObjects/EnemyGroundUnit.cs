@@ -1,6 +1,7 @@
 ﻿namespace TowerDeffence.GameObjects
 {
     using Interfaces;
+    using Helpers;
 
     public class EnemyGroundUnit : GroundUnit, IMoveable
     {
@@ -24,6 +25,10 @@
         public override void Draw()
         {
             throw new System.NotImplementedException();
+        }
+        public Position getPosition()
+        {
+            return this.Position;
         }
     }
 }

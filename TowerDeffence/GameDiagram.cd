@@ -27,7 +27,7 @@
   <Class Name="TowerDeffence.GameObjects.BattleUnit" Collapsed="true">
     <Position X="7" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAggAAAAAAAIAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAACAAAAQAAggAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\BattleUnit.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -43,20 +43,24 @@
   <Class Name="TowerDeffence.GameObjects.EnemyGroundUnit" Collapsed="true">
     <Position X="3.5" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAIAAAAIAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\EnemyGroundUnit.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TowerDeffence.GameObjects.GameObject" Collapsed="true">
     <Position X="10.25" Y="2.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="TowerDeffence.GameObjects.GameObject.GameObject" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameObjects\GameObject.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\GameObject.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Position" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="TowerDeffence.GameObjects.GamePlayfield" Collapsed="true">
     <Position X="19.25" Y="4" Width="1.5" />
@@ -108,9 +112,10 @@
   <Class Name="TowerDeffence.GameObjects.PlayerGroundUnit" Collapsed="true">
     <Position X="5.75" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAgAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAASAEIAAAAgAEAAAABAAAAAAEAAAIAAAAAAAAAAAI=</HashCode>
       <FileName>GameObjects\PlayerGroundUnit.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="TowerDeffence.GameObjects.TowerTile" Collapsed="true">
     <Position X="12.5" Y="5.5" Width="1.5" />
