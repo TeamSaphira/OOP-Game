@@ -1,20 +1,34 @@
 ﻿namespace TowerDeffence.GameObjects
 {
     using Interfaces;
+    using System;
 
     public class Player : GameObject, IPlayer
     {
-        public Player(string name, double money, int lives)
+        private int lives;
+
+        public Player(string name, int lives, double balance)
         {
-            Name = name;
-            Money = money;
-            Lives = lives;
+            this.Lives = lives;
+            this.Name = name;
+            this.Balance = balance;
         }
 
-        public string Name { get; private set; }
+        public int Lives 
+        {
+            get
+            {
+                return this.lives;
+            }
+            protected set
+            {
+                this.lives = value;
+            }
+        }
 
-        public double Money { get; private set; }
+        public string Name { get; protected set; }
 
-        public int Lives { get; private set; }
+        public double Balance { get; protected set; }
+
     }
 }

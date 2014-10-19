@@ -1,18 +1,32 @@
 ﻿namespace TowerDeffence.Helpers
 {
     using Interfaces;
+    using System;
 
-    public class PlayerRemoveMoneyDecorator : PlayerAddMoneyDecorator
+    public class PlayerRemoveMoneyDecorator : PlayerDecorator
     {
-        public PlayerRemoveMoneyDecorator(IPlayer player, double amount)
-            : base(player, amount)
+        public PlayerRemoveMoneyDecorator(IPlayer player, double differenceDecrease)
+            : base(player)
         {
-            
+            DifferenceDecrease = differenceDecrease;
         }
 
-        public override double Money
+        protected double DifferenceDecrease { get; set; }
+
+        public override double Balance
         {
-            get { return Player.Money - Amount; }
+            get
+            {
+                if (DifferenceDecrease > this.Player.Balance)
+                {
+                    throw new InvalidOperationException("you can't take out more money than you have");
+                }
+                else if (DifferenceDecrease < 0)
+                {
+                    throw new InvalidOperationException("you can't enter a number less than zero");
+                }
+                return this.Player.Balance - DifferenceDecrease; 
+            }
         }
     }
 }
