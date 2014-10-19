@@ -1,11 +1,14 @@
-﻿namespace TowerDeffence.GameObjects
+﻿using System;
+using TowerDeffence.Helpers;
+
+namespace TowerDeffence.GameObjects
 {
     using Interfaces;
 
     public class EnemyAirUnit : AirUnit, IMoveable
     {
-        public EnemyAirUnit(UnitSize size, int health, int price, double speed)
-            : base(size, health, price)
+        public EnemyAirUnit(UnitSize size, int health, int price, double speed, Position position)
+            : base(size, health, price, position)
         {
             this.Speed = speed;
         }
@@ -14,6 +17,7 @@
 
         public void Move(double speed, char direction)
         {
+            
             throw new System.NotImplementedException();
         }
 

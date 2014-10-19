@@ -7,7 +7,6 @@ namespace TowerDeffence.GameObjects
         protected GroundUnit(UnitSize size, int health, int price, Position position)
             : base(size, health, price, position)
         {
-            
         }
     }
 }

@@ -16,6 +16,7 @@ namespace TowerDeffence.GameObjects
 
         public void Move(double speed, char direction)
         {
+
             // check 
             bool canMove = false;
             if()

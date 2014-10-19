@@ -11,6 +11,8 @@ namespace TowerDeffence.Interfaces
 
         ICollection<EnemyGroundUnit> CreateEnemyGroundUnitByCount(UnitSize size, int health, int price, double speed, Position position, int count);
 
-        EnemyAirUnit CreateEnemyAirUnit(params object[] args);
+        EnemyAirUnit CreateEnemyAirUnit(UnitSize size, int health, int price, double speed, Position position);
+
+        ICollection<EnemyAirUnit> CreateEnemyAirUnitByCount(UnitSize size, int health, int price, double speed, Position position, int count);
     }
 }

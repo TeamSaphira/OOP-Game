@@ -18,8 +18,6 @@
             return new EnemyAirUnit(size, health, price, speed, position);
         }
 
-        // same for air v
-
 
         public ICollection<EnemyGroundUnit> CreateEnemyGroundUnitByCount(UnitSize size, int health, int price, double speed, Position position, int count)
         {
@@ -28,6 +26,19 @@
             {
                 // create
                 // add to list
+                EnemyGroundUnit groundUnit = CreateEnemyGroundUnit(size, health, price, speed, position);
+                units.Add(groundUnit);
+            }
+            return units;
+        }
+
+        public ICollection<EnemyAirUnit> CreateEnemyAirUnitByCount(UnitSize size, int health, int price, double speed, Position position, int count)
+        {
+            var units = new List<EnemyAirUnit>();
+            for (int i = 0; i < count; i++)
+            {
+                EnemyAirUnit airUnit = CreateEnemyAirUnit(size, health, price, speed, position);
+                units.Add(airUnit);
             }
             return units;
         }

@@ -150,7 +150,7 @@
   <Class Name="TowerDeffence.Helpers.EnemyUnitFactory" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="21.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAACAAEAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAACAAEAAAAAAEAAAA=</HashCode>
       <FileName>Helpers\EnemyUnitFactory.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
@@ -198,7 +198,7 @@
       <FileName>GameObjects\GroundUnit.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Struct Name="TowerDeffence.Helpers.Position" Collapsed="true">
+  <Struct Name="TowerDeffence.Helpers.Position">
     <Position X="10.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
@@ -274,7 +274,7 @@
   <Interface Name="TowerDeffence.Interfaces.IEnemyUnitFactory" Collapsed="true">
     <Position X="16" Y="7.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAACAAEAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAACAAEAAAAAAEAAAA=</HashCode>
       <FileName>Interfaces\IEnemyUnitFactory.cs</FileName>
     </TypeIdentifier>
   </Interface>
