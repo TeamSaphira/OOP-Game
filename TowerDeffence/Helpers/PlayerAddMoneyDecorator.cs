@@ -5,23 +5,23 @@
 
     public class PlayerAddMoneyDecorator : PlayerDecorator
     {
-        public PlayerAddMoneyDecorator(IPlayer player, double differenceIncrease)
+        public PlayerAddMoneyDecorator(IPlayer player, double amount)
             : base(player)
         {
-            DifferenceIncrease = differenceIncrease;
+            Amount = amount;
         }
 
-        protected double DifferenceIncrease { get; set; }
+        protected double Amount { get; set; }
 
-        public override double Balance
+        public override double Money
         {
             get 
             {
-                if (DifferenceIncrease < 0)
+                if (Amount < 0)
                 {
                     throw new InvalidOperationException("you can't enter a number less than zero");
                 }
-                return this.Player.Balance + DifferenceIncrease;
+                return this.Player.Money + Amount;
             }
         }
     }

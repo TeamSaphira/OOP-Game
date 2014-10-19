@@ -5,27 +5,27 @@
 
     public class PlayerRemoveMoneyDecorator : PlayerDecorator
     {
-        public PlayerRemoveMoneyDecorator(IPlayer player, double differenceDecrease)
+        public PlayerRemoveMoneyDecorator(IPlayer player, double amount)
             : base(player)
         {
-            DifferenceDecrease = differenceDecrease;
+            Amount = amount;
         }
 
-        protected double DifferenceDecrease { get; set; }
+        protected double Amount { get; set; }
 
-        public override double Balance
+        public override double Money
         {
             get
             {
-                if (DifferenceDecrease > this.Player.Balance)
+                if (Amount > this.Player.Money)
                 {
                     throw new InvalidOperationException("you can't take out more money than you have");
                 }
-                else if (DifferenceDecrease < 0)
+                else if (Amount < 0)
                 {
                     throw new InvalidOperationException("you can't enter a number less than zero");
                 }
-                return this.Player.Balance - DifferenceDecrease; 
+                return this.Player.Money - Amount; 
             }
         }
     }

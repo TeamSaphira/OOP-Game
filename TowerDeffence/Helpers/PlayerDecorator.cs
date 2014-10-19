@@ -15,9 +15,9 @@
 
         public IPlayer Player { get; private set; }
 
-        public virtual double Balance
+        public virtual double Money
         {
-            get { return this.Player.Balance; }
+            get { return this.Player.Money; }
         }
 
         public virtual int Lives

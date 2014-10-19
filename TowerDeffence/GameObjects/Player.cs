@@ -11,7 +11,7 @@
         {
             this.Lives = lives;
             this.Name = name;
-            this.Balance = balance;
+            this.Money = balance;
         }
 
         public int Lives 
@@ -28,7 +28,7 @@
 
         public string Name { get; protected set; }
 
-        public double Balance { get; protected set; }
+        public double Money { get; protected set; }
 
     }
 }
