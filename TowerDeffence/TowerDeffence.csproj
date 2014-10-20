@@ -65,6 +65,7 @@
     <Compile Include="GameObjects\Player.cs" />
     <Compile Include="GameObjects\PlayerAirUnit.cs" />
     <Compile Include="GameObjects\PlayerGroundUnit.cs" />
+    <Compile Include="GameObjects\TowerState.cs" />
     <Compile Include="GameObjects\TowerTile.cs" />
     <Compile Include="GameObjects\UnitSize.cs" />
     <Compile Include="Graphics\AirUnitRenderer.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Interfaces\IPlayer.cs" />
     <Compile Include="Interfaces\IDrawable.cs" />
     <Compile Include="Interfaces\IRenderer.cs" />
+    <Compile Include="Interfaces\ITower.cs" />
     <Compile Include="Interfaces\IUpgradeable.cs" />
     <Compile Include="Interfaces\IUserInputHandler.cs" />
     <Compile Include="Helpers\Position.cs" />

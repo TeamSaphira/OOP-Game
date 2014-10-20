@@ -5,30 +5,21 @@ namespace TowerDeffence.GameObjects
     using Helpers;
     using Interfaces;
 
-    class Bullet : GroundUnit
+    public class Bullet : IMoveable
     {
-        protected Position startPosition,position,targetPosition;
-        protected float speed;
-        protected int damage;
-        protected EnemyGroundUnit enemy;
+        public double Speed { get; set; }
+        public Position Position { get; set; }
 
-        public delegate void FiredEvent(Bullet sender);
-        public FiredEvent bulletHit;
-
-        public Bullet(Position position,EnemyGroundUnit enemy,int damage)
+        public Bullet(Position position, double speed)
         {
-            this.enemy = enemy;
-            this.damage = damage;
-            this.position = position;
-            startPosition = position;
-            speed = 10;
+            this.Speed = speed;
+            this.Position = position;
         }
 
-        public void setEnemy(EnemyGroundUnit enemy)
+
+        public void Move(double speed)
         {
-            this.enemy = enemy;
-            startPosition = position;
-            targetPosition = enemy.getPosition();
+            throw new NotImplementedException();
         }
     }
 }

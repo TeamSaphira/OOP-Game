@@ -6,8 +6,6 @@
     {
         
         public event UnitOnDeathHandler OnDeath;
-
-        public BattleUnit() { }
         
         protected BattleUnit(UnitSize size, int health, int price, Position position)
             : base(position)
@@ -16,7 +14,7 @@
             Health = health;
             Price = price;
         }
-        public UnitSize Size { get; private set; }
+        public UnitSize Size { get; set; }
         public abstract void Draw();
         public int Health { get; private set; }
         public int Price { get; private set; }
