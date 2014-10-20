@@ -47,12 +47,5 @@
             //  load data
             // init data
         }
-
-        public void Run()
-        {
-            InitGame();
-            InteractionManager.ShowGameMenu();
-            // gameMenu start onclick LoadLevel(1)
-        }
     }
 }

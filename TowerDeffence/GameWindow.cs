@@ -7,20 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TowerDeffence.Engine;
 
 namespace TowerDeffence
 {
-    using Engine;
 
     public partial class MainForm : Form
     {
+        private Engine.Engine engine;
+
         public MainForm()
         {
             InitializeComponent();
         }
 
-        private void Test(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
+            //this.engine = new Engine.Engine();
+            //this.engine.InitGame();
+            //this.engine.InteractionManager.ShowGameMenu();
+            var t = new InteractionManager();
+            t.ShowGameMenu(this);
         }
     }
 }

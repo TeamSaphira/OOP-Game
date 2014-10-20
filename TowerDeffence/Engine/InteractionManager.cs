@@ -1,15 +1,17 @@
-﻿namespace TowerDeffence.Engine
+﻿using System.Drawing;
+
+namespace TowerDeffence.Engine
 {
+    using System.Windows.Forms;
+
     using Interfaces;
 
     public class InteractionManager : IInteractionManager
     {
-        public void ShowGameMenu()
+        public void ShowGameMenu(Form form)
         {
-            //load menu data
-            // init menu data
-            // show menu
-            throw new System.NotImplementedException();
+            var btn = new Button {Text = @"Start Game", Location = new Point(100,200), Size = new Size(300, 50)};
+            form.Controls.Add(btn);
         }
     }
 }
