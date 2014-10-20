@@ -1,6 +1,6 @@
 ﻿namespace TowerDeffence.Interfaces
 {
-    public interface ITower
+    public interface ITower : IPositionable
     {
         double Range { get; }
 

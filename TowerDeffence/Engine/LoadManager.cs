@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 
 namespace TowerDeffence.Engine
 {
@@ -32,6 +33,13 @@ namespace TowerDeffence.Engine
             }
 
             return enemiesData;
+        }
+
+        public static Image LoadImage(string path)
+        {
+            // load image
+
+            return new Bitmap(1,1);
         }
     }
 }

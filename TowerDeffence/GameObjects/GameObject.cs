@@ -1,8 +1,9 @@
 ﻿namespace TowerDeffence.GameObjects
 {
+    using Interfaces;
     using Helpers;
 
-    public abstract class GameObject
+    public abstract class GameObject : IPositionable
     {
         protected GameObject()
         {

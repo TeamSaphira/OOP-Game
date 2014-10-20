@@ -13,6 +13,5 @@
         }
         public int Price { get; set; }
         public abstract void Draw();
-        public int Health { get; private set; }
     }
 }
