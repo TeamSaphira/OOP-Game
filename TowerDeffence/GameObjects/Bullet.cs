@@ -16,8 +16,7 @@ namespace TowerDeffence.GameObjects
             this.Position = position;
         }
 
-
-        public void Move(double speed)
+        public void Move(char direction)
         {
             throw new NotImplementedException();
         }

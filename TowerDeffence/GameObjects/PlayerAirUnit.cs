@@ -25,5 +25,10 @@ namespace TowerDeffence.GameObjects
             this.Damage += 15;
             this.FireRate += 15;
         }
+
+        public override void Draw()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

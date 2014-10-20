@@ -18,4 +18,13 @@
 			</Enemy>
 		</Enemies>
 	</Level1>
+	<Level2>
+		<Enemies>
+			<Enemy>
+				<Count>3</Count>
+				<Size>Medium</Size>
+				<Health>150</Health>
+			</Enemy>
+		</Enemies>
+	</Level2>
 </GameLevels>

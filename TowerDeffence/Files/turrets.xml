@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Turrets>
+	<Turret>
+		<Type></Type> <!-- Ground / Air -->
+		<Damage>10</Damage>
+		<Range>100</Range>
+		<FireRate>0.5</FireRate> <!-- shots per second -->
+	</Turret>
+</Turrets>
