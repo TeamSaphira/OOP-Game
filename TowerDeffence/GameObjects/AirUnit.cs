@@ -7,6 +7,7 @@
         protected AirUnit(int price, Position position)
             : base(price, position)
         {
+           
         }
     }
 }
