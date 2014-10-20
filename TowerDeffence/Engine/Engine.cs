@@ -13,6 +13,17 @@
             this.controller = controller;
         }
 
+        public ICollisionHandler CollisionHandler
+        {
+            get
+            {
+                throw new System.NotImplementedException();
+            }
+            set
+            {
+            }
+        }
+
         public IPlayer Player
         {
             get
@@ -48,17 +59,6 @@
         }
 
         public IInteractionManager InteractionManager
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public TowerDeffence.Interfaces.ICollisionHandler CollisionHandler
         {
             get
             {

@@ -6,6 +6,5 @@
 
     public abstract class CollisionHandler : ICollisionHandler
     {
-        public event EventHandler OnCollide;
     }
 }
