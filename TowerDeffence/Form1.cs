@@ -16,5 +16,12 @@ namespace TowerDeffence
         {
             InitializeComponent();
         }
+
+        private void Test(object sender, EventArgs e)
+        {
+            var btn = new Button() {Text = @"Test button", Location = new Point(100, 250), Size = new Size(150,150) };
+            
+            this.Controls.Add(btn);
+        }
     }
 }

@@ -40,6 +40,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Saphira Deffense";
+            this.Load += new System.EventHandler(this.Test);
             this.ResumeLayout(false);
 
         }
