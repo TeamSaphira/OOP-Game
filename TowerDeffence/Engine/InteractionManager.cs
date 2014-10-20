@@ -10,7 +10,7 @@ namespace TowerDeffence.Engine
     {
         public void ShowGameMenu(Form form)
         {
-            var btn = new Button {Text = @"Start Game", Location = new Point(100,200), Size = new Size(300, 50)};
+            var btn = new Button {Text = @"Start Game", Location = new Point(325,225), Size = new Size(150, 150)};
             form.Controls.Add(btn);
         }
     }
