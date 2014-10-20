@@ -7,24 +7,40 @@
 
     public class EnemyUnitFactory : IEnemyUnitFactory
     {
-        public EnemyGroundUnit CreateEnemyGroundUnit(params object[] args)
+
+        public EnemyGroundUnit CreateEnemyGroundUnit(UnitSize size, int health, int price, double speed, Position position)
         {
-            throw new System.NotImplementedException();
+            return new EnemyGroundUnit(size, health, price, speed, position);
         }
 
-        public PlayerGroundUnit CreatePlayerGroundUnit(params object[] args)
+        public EnemyAirUnit CreateEnemyAirUnit(UnitSize size, int health, int price, double speed, Position position)
         {
-            throw new System.NotImplementedException();
+            return new EnemyAirUnit(size, health, price, speed, position);
         }
 
-        public EnemyAirUnit CreateEnemyAirUnit(params object[] args)
+
+        public ICollection<EnemyGroundUnit> CreateEnemyGroundUnitByCount(UnitSize size, int health, int price, double speed, Position position, int count)
         {
-            throw new System.NotImplementedException();
+            var units = new List<EnemyGroundUnit>();
+            for (int i = 0; i < count; i++)
+            {
+                // create
+                // add to list
+                EnemyGroundUnit groundUnit = CreateEnemyGroundUnit(size, health, price, speed, position);
+                units.Add(groundUnit);
+            }
+            return units;
         }
 
-        public PlayerAirUnit CreatePlayerAirUnit(params object[] args)
+        public ICollection<EnemyAirUnit> CreateEnemyAirUnitByCount(UnitSize size, int health, int price, double speed, Position position, int count)
         {
-            throw new System.NotImplementedException();
+            var units = new List<EnemyAirUnit>();
+            for (int i = 0; i < count; i++)
+            {
+                EnemyAirUnit airUnit = CreateEnemyAirUnit(size, health, price, speed, position);
+                units.Add(airUnit);
+            }
+            return units;
         }
     }
 }

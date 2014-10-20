@@ -1,36 +1,31 @@
-﻿namespace TowerDeffence.GameObjects
+﻿using TowerDeffence.Helpers;
+
+namespace TowerDeffence.GameObjects
 {
     using Interfaces;
 
     using System.Collections.Generic;
 
-    public abstract class PlayerGroundUnit : GroundUnit, ITower, IUpgradeable
+    public class PlayerGroundUnit : GroundUnit, ITower, IUpgradeable
     {
-        protected PlayerGroundUnit()
-        {
-            
-        }
-
         public TowerState TowerState { get; set; }
 
-        public double Range
-        {
-            get { throw new System.NotImplementedException(); }
-        }
+        public double Range  { get; private set; }
 
-        public double Damage
-        {
-            get { throw new System.NotImplementedException(); }
-        }
+        public double Damage { get; private set; }
 
-        public double FireRate
-        {
-            get { throw new System.NotImplementedException(); }
-        }
+        public double FireRate { get; private set; }
 
-        public void Upgrade()
+        public PlayerGroundUnit(int price, Position position) : base (price,position)
         {
-            throw new System.NotImplementedException();
+            this.Price = price;
+            this.Position = position;
+        }
+        public virtual void Upgrade()
+        {
+            this.Damage += 10;
+            this.FireRate += 15;
+            this.Range += 10;
         }
     }
 }

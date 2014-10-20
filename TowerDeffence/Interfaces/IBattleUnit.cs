@@ -4,10 +4,6 @@
 
     public interface IBattleUnit
     {
-        UnitSize Size
-        {
-            get;
-            set;
-        }
+        int Price { get; }
     }
 }

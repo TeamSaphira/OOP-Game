@@ -1,17 +1,13 @@
 ﻿namespace TowerDeffence.GameObjects
 {
+    using Helpers;
+
     public abstract class AirUnit : BattleUnit
     {
-        public UnitSize UnitSize
+        protected AirUnit(int price, Position position)
+            : base(price, position)
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-
-            }
+           
         }
     }
 }
