@@ -1,31 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="TowerDeffence.Engine.Engine" Collapsed="true">
-    <Position X="13" Y="7.5" Width="1.5" />
+    <Position X="13" Y="6.25" Width="1.5" />
     <TypeIdentifier>
+<<<<<<< HEAD
       <HashCode>BAAAAAAAAAAAoCAAAAAAQAQAAAAAAAAAAACAAQIAAAA=</HashCode>
+=======
+      <HashCode>BAAAAAAAAAAAoCEAAAAAAAAAAAAAAAAAAACAAQIAAAA=</HashCode>
+>>>>>>> origin/UserInput
       <FileName>Engine\Engine.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Player" />
-      <Property Name="UserInputController" />
       <Property Name="GamePlayfield" />
       <Property Name="BattleUnitDecorator" />
       <Property Name="InteractionManager" />
-      <Property Name="CollisionHandler" />
       <Property Name="EnemyUnitFactory" />
       <Property Name="Renderer" />
+      <Property Name="CollisionHandler" />
     </ShowAsAssociation>
   </Class>
   <Class Name="TowerDeffence.GameObjects.AirUnit" Collapsed="true">
-    <Position X="9.25" Y="5.5" Width="1.5" />
+    <Position X="9.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\AirUnit.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TowerDeffence.GameObjects.BattleUnit" Collapsed="true">
-    <Position X="7" Y="4" Width="1.5" />
+    <Position X="7" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAgAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\BattleUnit.cs</FileName>
@@ -33,7 +36,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TowerDeffence.GameObjects.EnemyAirUnit" Collapsed="true">
-    <Position X="8" Y="7" Width="1.5" />
+    <Position X="8" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAIAAggAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\EnemyAirUnit.cs</FileName>
@@ -41,7 +44,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TowerDeffence.GameObjects.EnemyGroundUnit" Collapsed="true">
-    <Position X="3.5" Y="7" Width="1.5" />
+    <Position X="3.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAIAAggAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\EnemyGroundUnit.cs</FileName>
@@ -49,14 +52,14 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TowerDeffence.GameObjects.GameObject" Collapsed="true">
-    <Position X="10.25" Y="2.75" Width="1.5" />
+    <Position X="10.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\GameObject.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TowerDeffence.GameObjects.GamePlayfield" Collapsed="true">
-    <Position X="19.25" Y="4" Width="1.5" />
+    <Position X="19.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\GamePlayfield.cs</FileName>
@@ -66,7 +69,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="TowerDeffence.GameObjects.EarthMap" Collapsed="true">
-    <Position X="1.25" Y="4" Width="1.5" />
+    <Position X="1.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\EarthMap.cs</FileName>
@@ -74,21 +77,21 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TowerDeffence.GameObjects.MapTile" Collapsed="true">
-    <Position X="13.75" Y="4" Width="1.5" />
+    <Position X="13.75" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\MapTile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TowerDeffence.GameObjects.PathTile" Collapsed="true">
-    <Position X="14.75" Y="5.5" Width="1.5" />
+    <Position X="14.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\PathTile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TowerDeffence.GameObjects.Player" Collapsed="true">
-    <Position X="17" Y="4" Width="1.5" />
+    <Position X="17" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAAAAAAAAAAAAAAAAAQAAAIAAAACAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\Player.cs</FileName>
@@ -96,21 +99,21 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TowerDeffence.GameObjects.PlayerAirUnit" Collapsed="true">
-    <Position X="10.25" Y="7" Width="1.5" />
+    <Position X="10.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\PlayerAirUnit.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TowerDeffence.GameObjects.PlayerGroundUnit" Collapsed="true">
-    <Position X="5.75" Y="7" Width="1.5" />
+    <Position X="5.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\PlayerGroundUnit.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TowerDeffence.GameObjects.TowerTile" Collapsed="true">
-    <Position X="12.5" Y="5.5" Width="1.5" />
+    <Position X="12.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\TowerTile.cs</FileName>
@@ -125,7 +128,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="TowerDeffence.Helpers.BattleUnitDecorator" Collapsed="true">
-    <Position X="6.75" Y="8.75" Width="1.5" />
+    <Position X="6.75" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAQAAgAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Helpers\BattleUnitDecorator.cs</FileName>
@@ -133,7 +136,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TowerDeffence.Helpers.CollisionHandler" Collapsed="true">
-    <Position X="2.25" Y="8.75" Width="1.5" />
+    <Position X="2" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Helpers\CollisionHandler.cs</FileName>
@@ -141,7 +144,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TowerDeffence.Helpers.DamageUpgradeDecorator" Collapsed="true">
-    <Position X="6.5" Y="10" Width="2.25" />
+    <Position X="6.5" Y="8.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Helpers\DamageUpgradeDecorator.cs</FileName>
@@ -156,28 +159,28 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="TowerDeffence.Helpers.GameException" Collapsed="true">
-    <Position X="0.75" Y="11.75" Width="1.5" />
+    <Position X="0.75" Y="10.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Helpers\GameException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TowerDeffence.Helpers.IntersectionCollisionHandler" Collapsed="true">
-    <Position X="0.5" Y="10" Width="2" />
+    <Position X="0.5" Y="8.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Helpers\IntersectionCollisionHandler.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TowerDeffence.Helpers.InvalidBuildPositionException" Collapsed="true">
-    <Position X="0.5" Y="13.25" Width="2.25" />
+    <Position X="0.5" Y="12" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Helpers\InvalidBuildPositionException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TowerDeffence.Helpers.RangeCollisionHandler" Collapsed="true">
-    <Position X="3.25" Y="10" Width="2" />
+    <Position X="3.25" Y="8.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Helpers\RangeCollisionHandler.cs</FileName>
@@ -192,14 +195,22 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="TowerDeffence.GameObjects.GroundUnit" Collapsed="true">
-    <Position X="4.75" Y="5.5" Width="1.5" />
+    <Position X="4.75" Y="4.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\GroundUnit.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Struct Name="TowerDeffence.Helpers.Position" Collapsed="true">
-    <Position X="10.25" Y="0.75" Width="1.5" />
+  <Class Name="TowerDeffence.Helpers.KeyboardMouseUserInput" Collapsed="true">
+    <Position X="14.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAABAAAQAAAAAAAAAgCAAAAAMAAAAAMEAAAAAAAAA=</HashCode>
+      <FileName>Helpers\KeyboardMouseUserInput.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="TowerDeffence.Helpers.Position">
+    <Position X="7" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
       <FileName>Helpers\Position.cs</FileName>
@@ -213,7 +224,7 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="TowerDeffence.Interfaces.IMap" Collapsed="true">
-    <Position X="16.5" Y="2" Width="1.5" />
+    <Position X="16.5" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IMap.cs</FileName>
@@ -230,7 +241,7 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="TowerDeffence.Interfaces.IPlayer" Collapsed="true">
-    <Position X="10" Y="11.5" Width="1.5" />
+    <Position X="10" Y="10.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAAAAAAAAAAAAAAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IPlayer.cs</FileName>
@@ -251,49 +262,49 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="TowerDeffence.Interfaces.IUserInputHandler" Collapsed="true">
-    <Position X="13" Y="11.5" Width="1.5" />
+    <Position X="13" Y="10.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAABAAAQAAAAAAAAAgCAAAAAEAAAAAEEAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IUserInputHandler.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="TowerDeffence.Interfaces.IInteractionManager" Collapsed="true">
-    <Position X="16" Y="9.5" Width="1.75" />
+    <Position X="16" Y="8.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IInteractionManager.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="TowerDeffence.Interfaces.ICollisionHandler" Collapsed="true">
-    <Position X="10" Y="9.5" Width="1.5" />
+    <Position X="10" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\ICollisionHandler.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="TowerDeffence.Interfaces.IEnemyUnitFactory" Collapsed="true">
-    <Position X="16" Y="7.5" Width="1.75" />
+    <Position X="16" Y="6.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAACAAEAAAAAAEAAAA=</HashCode>
       <FileName>Interfaces\IEnemyUnitFactory.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="TowerDeffence.Interfaces.IRenderer" Collapsed="true">
-    <Position X="13" Y="9.5" Width="1.5" />
+    <Position X="13" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IRenderer.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="TowerDeffence.GameObjects.UnitSize" Collapsed="true">
-    <Position X="21.75" Y="4.75" Width="1.5" />
+    <Position X="4" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAQAAAAAABgAAAAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>GameObjects\UnitSize.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Delegate Name="TowerDeffence.Helpers.UnitOnDeathHandler" Collapsed="true">
-    <Position X="21.75" Y="5.75" Width="1.5" />
+    <Position X="21.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Helpers\UnitOnDeathHandler.cs</FileName>

@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TowerDeffence.Engine;
+<<<<<<< HEAD:TowerDeffence/GameWindow.cs
+=======
+using TowerDeffence.Interfaces;
+using TowerDeffence.Helpers;
+>>>>>>> origin/UserInput:TowerDeffence/Form1.cs
 
 namespace TowerDeffence
 {
@@ -20,6 +25,7 @@ namespace TowerDeffence
         {
             InitializeComponent();
         }
+<<<<<<< HEAD:TowerDeffence/GameWindow.cs
 
         private void MainForm_Load(object sender, EventArgs e)
         {
@@ -28,6 +34,12 @@ namespace TowerDeffence
             //this.engine.InteractionManager.ShowGameMenu();
             var t = new InteractionManager();
             t.ShowGameMenu(this);
+=======
+        private void MainForm_Load(object sender, EventArgs s)
+        {
+            IUserInputHandler controller = new KeyboardMouseUserInput(this);
+            Engine.Engine engine = new Engine.Engine(controller);
+>>>>>>> origin/UserInput:TowerDeffence/Form1.cs
         }
     }
 }

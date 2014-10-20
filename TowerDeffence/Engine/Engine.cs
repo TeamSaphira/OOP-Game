@@ -5,9 +5,11 @@
     using Helpers;
     using GameObjects;
     using Interfaces;
+    using Graphics;
 
     public class Engine
     {
+<<<<<<< HEAD
         public Engine(IPlayer player, IUserInputHandler userInputController, GamePlayfield gamePlayfield, BattleUnitDecorator battleUnitDecorator, IInteractionManager interactionManager, ICollisionHandler collisionHandler, IEnemyUnitFactory enemyUnitFactory, IRenderer renderer)
         {
             Player = player;
@@ -28,6 +30,7 @@
 
         public BattleUnitDecorator BattleUnitDecorator { get; private set; }
 
+<<<<<<< HEAD
         public IInteractionManager InteractionManager { get; set; }
 
         public ICollisionHandler CollisionHandler { get; private set; }
@@ -37,6 +40,9 @@
         public IRenderer Renderer { get; private set; }
 
         public void InitGame()
+=======
+        public TowerDeffence.Interfaces.IEnemyUnitFactory EnemyUnitFactory
+>>>>>>> origin/UserInput
         {
             // load game global files
             throw new NotImplementedException();

@@ -11,8 +11,12 @@
     <AssemblyName>TowerDeffence</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+<<<<<<< HEAD
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+=======
+    <NuGetPackageImportStamp>b1bc4432</NuGetPackageImportStamp>
+>>>>>>> origin/UserInput
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -105,7 +109,12 @@
     <Compile Include="Interfaces\IUpgradeable.cs" />
     <Compile Include="Interfaces\IUserInputHandler.cs" />
     <Compile Include="Helpers\Position.cs" />
+<<<<<<< HEAD
     <Compile Include="GameWindowScript.cs" />
+=======
+    <Compile Include="Helpers\KeyboardMouseUserInput.cs" />
+    <Compile Include="Program.cs" />
+>>>>>>> origin/UserInput
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GameWindow.resx">
       <DependentUpon>GameWindow.cs</DependentUpon>
