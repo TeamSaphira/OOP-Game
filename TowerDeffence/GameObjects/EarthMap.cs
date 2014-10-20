@@ -11,26 +11,16 @@
     public class EarthMap : GameObject, IMap
     {
         private int[,] levelMatrix; // This matrix represents numbers from text file of current level;
-
-        public EarthMap(MapTile[,] MapTiles)
+        public MapTile[,] MapTiles { get; set; }
+        public EarthMap(int width, int height, string fileName)
         {
+            this.MapTiles = new MapTile[width, height];
+            FillMatrixFromFile(fileName);
             FillMapWithTiles(this.levelMatrix);
         }
-
-        public MapTile[,] MapTiles
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
         public void FillMatrixFromFile(string fileName)
         {
-            string currentLevel = @"level1.txt";
+            string currentLevel = @"level1.csv";
             String input = File.ReadAllText(currentLevel);
 
             int indexRow = 0;
@@ -41,7 +31,7 @@
             {
                 indexCol = 0;
 
-                foreach (var col in row.Trim().Split(' '))
+                foreach (var col in row.Trim().Split(new []{';'}, StringSplitOptions.RemoveEmptyEntries))
                 {
                     this.levelMatrix[indexRow, indexCol] = int.Parse(col.Trim());
                     indexCol++;
@@ -72,14 +62,6 @@
                     MapTiles[row, col] = tile;
                 }
             }
-
-            //PictureBox pb = new PictureBox();
-            //pb.BackColor = Color.Green;
-            //pb.Width = 40;
-            //pb.Height = 40;
-            //pb.Location = new Point( x * 40, y * 40);
-            //pb.Parent = form;
-            //MapTiles[x, y] = tile;
         }
     }
 }
