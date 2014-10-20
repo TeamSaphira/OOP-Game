@@ -4,8 +4,8 @@
 
     public abstract class GroundUnit : BattleUnit
     {
-        protected GroundUnit(UnitSize size, int health, int price, Position position)
-            : base(size, health, price, position)
+        protected GroundUnit(int price, Position position)
+            : base(price, position)
         {
         }
     }

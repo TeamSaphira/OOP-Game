@@ -6,8 +6,8 @@ namespace TowerDeffence.GameObjects
 
     public class PlayerGroundUnit : GroundUnit
     {
-        public PlayerGroundUnit(UnitSize size, int health, int price, Position position)
-            : base(size, health, price, position)
+        public PlayerGroundUnit(int price, Position position)
+            : base(price, position)
         {
             
         }

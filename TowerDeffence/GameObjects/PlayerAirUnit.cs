@@ -6,8 +6,8 @@ namespace TowerDeffence.GameObjects
 
     public class PlayerAirUnit : AirUnit
     {
-        public PlayerAirUnit(UnitSize size, int health, int price, Position position)
-            : base(size, health, price, position)
+        public PlayerAirUnit(int price, Position position)
+            : base(price, position)
         {
         }
 

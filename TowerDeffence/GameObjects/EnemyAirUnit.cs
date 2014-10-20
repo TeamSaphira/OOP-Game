@@ -5,13 +5,19 @@
     using Helpers;
     using Interfaces;
 
-    public class EnemyAirUnit : AirUnit, IMoveable
+    public class EnemyAirUnit : AirUnit, IMoveable, IEnemyUnit
     {
         public EnemyAirUnit(UnitSize size, int health, int price, double speed, Position position)
-            : base(size, health, price, position)
+            : base(price, position)
         {
+            this.Health = health;
+            this.Size = size;
             this.Speed = speed;
         }
+
+        public UnitSize Size { get; protected set; }
+
+        public int Health { get; protected set; }
 
         public double Speed { get; set; }
 

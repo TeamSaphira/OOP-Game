@@ -2,12 +2,20 @@
 <GameLevels>
 	<Level1>
 		<Enemies>
-			<Small>5</Small>
-			<Medium>1</Medium>
+			<Enemy>
+				<Count>5</Count>
+				<Size>Small</Size>
+				<Health>250</Health>
+				<Price>100</Price>
+				<Speed>50</Speed>
+			</Enemy>
+			<Enemy>
+				<Count>1</Count>
+				<Size>Medium</Size>
+				<Health>350</Health>
+				<Price>150</Price>
+				<Speed>40</Speed>
+			</Enemy>
 		</Enemies>
-		<EnemiesPrice>
-			<Small>100</Small>
-			<Medium>125</Medium>
-		</EnemiesPrice>
 	</Level1>
 </GameLevels>

@@ -93,6 +93,7 @@
     <Compile Include="Helpers\UnitOnDeathHandler.cs" />
     <Compile Include="Interfaces\IBattleUnit.cs" />
     <Compile Include="Interfaces\ICollisionHandler.cs" />
+    <Compile Include="Interfaces\IEnemyUnit.cs" />
     <Compile Include="Interfaces\IEnemyUnitFactory.cs" />
     <Compile Include="Interfaces\IFireable.cs" />
     <Compile Include="Interfaces\IInteractionManager.cs" />

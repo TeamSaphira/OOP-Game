@@ -4,8 +4,8 @@
 
     public abstract class AirUnit : BattleUnit
     {
-        protected AirUnit(UnitSize size, int health, int price, Position position)
-            : base(size, health, price, position)
+        protected AirUnit(int price, Position position)
+            : base(price, position)
         {
         }
     }
