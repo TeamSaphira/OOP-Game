@@ -8,20 +8,23 @@
 				<Health>250</Health>
 				<Bounty>100</Bounty>
 				<Speed>30</Speed>
+				<Type>Ground</Type>
 		   	</Enemy>
 			<Enemy>
 				<Count>2</Count>
 				<Size>Medium</Size>
 				<Health>350</Health>
-				<bounty>150</bounty>
+				<Bounty>150</Bounty>
 				<Speed>40</Speed>
+				<Type>Ground</Type>
 			</Enemy>
-                        <Enemy>
+            <Enemy>
 				<Count>1</Count>
 				<Size>large</Size>
 				<Health>450</Health>
-				<bounty>150</bounty>
+				<Bounty>150</Bounty>
 				<Speed>60</Speed>
+				<Type>Air</Type>
 			</Enemy>
 		</Enemies>
 	</Level1>
@@ -38,14 +41,14 @@
 				<Count>3</Count>
 				<Size>Medium</Size>
 				<Health>350</Health>
-				<bounty>300</bounty>
+				<Bounty>300</Bounty>
 				<Speed>45</Speed>
 			</Enemy>
                         <Enemy>
 				<Count>2</Count>
 				<Size>large</Size>
 				<Health>400</Health>
-				<bounty>350</bounty>
+				<Bounty>350</Bounty>
 				<Speed>60</Speed>
 			</Enemy>
 		</Enemies>
@@ -63,14 +66,14 @@
 				<Count>5</Count>
 				<Size>Medium</Size>
 				<Health>370</Health>
-				<bounty>400</bounty>
+				<Bounty>400</Bounty>
 				<Speed>45</Speed>
 			</Enemy>
-                        <Enemy>
+            <Enemy>
 				<Count>3</Count>
 				<Size>large</Size>
 				<Health>500</Health>
-				<bounty>350</bounty>
+				<Bounty>350</Bounty>
 				<Speed>60</Speed>
 			</Enemy>
 		</Enemies>
@@ -88,21 +91,21 @@
 				<Count>5</Count>
 				<Size>Medium</Size>
 				<Health>370</Health>
-				<bounty>400</bounty>
+				<Bounty>400</Bounty>
 				<Speed>45</Speed>
 			</Enemy>
                         <Enemy>
 				<Count>3</Count>
 				<Size>large</Size>
 				<Health>500</Health>
-				<bounty>350</bounty>
+				<Bounty>350</Bounty>
 				<Speed>60</Speed>
 			</Enemy>
-                        <Enemy>
+            <Enemy>
 				<Count>1</Count>
 				<Size>ExtraLarge</Size>
 				<Health>700</Health>
-				<bounty>1000</bounty>
+				<Bounty>1000</Bounty>
 				<Speed>70</Speed>
 			</Enemy>
 		</Enemies>
@@ -120,21 +123,21 @@
 				<Count>10</Count>
 				<Size>Medium</Size>
 				<Health>370</Health>
-				<bounty>400</bounty>
+				<Bounty>400</Bounty>
 				<Speed>45</Speed>
 			</Enemy>
                         <Enemy>
 				<Count>5</Count>
 				<Size>large</Size>
 				<Health>500</Health>
-				<bounty>350</bounty>
+				<Bounty>350</Bounty>
 				<Speed>60</Speed>
 			</Enemy>
                         <Enemy>
 				<Count>5</Count>
 				<Size>ExtraLarge</Size>
 				<Health>700</Health>
-				<bounty>1000</bounty>
+				<Bounty>1000</Bounty>
 				<Speed>70</Speed>
 			</Enemy>
 		</Enemies>

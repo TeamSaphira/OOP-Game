@@ -19,11 +19,9 @@ namespace TowerDeffence.GameObjects
             this.Price = price;
             this.Position = position;
         }
-        public virtual void Upgrade()
+        public void Upgrade()
         {
-            this.Damage += 10;
-            this.FireRate += 15;
-            this.Range += 10;
+            
         }
 
         public override void Draw()

@@ -82,7 +82,7 @@
     <Compile Include="Helpers\GameException.cs" />
     <Compile Include="Helpers\IntersectionCollisionHandler.cs" />
     <Compile Include="Helpers\InvalidBuildPositionException.cs" />
-    <Compile Include="Helpers\LevelData.cs" />
+    <Compile Include="Helpers\EnemyData.cs" />
     <Compile Include="Helpers\PlayerDecorator.cs" />
     <Compile Include="Helpers\PlayerLivesDecorator.cs" />
     <Compile Include="Helpers\PlayerAddMoneyDecorator.cs" />
@@ -129,7 +129,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="ClassDiagram1.cd" />
     <None Include="GameDiagram.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

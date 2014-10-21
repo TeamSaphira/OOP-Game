@@ -20,7 +20,7 @@
             var container = new ContainerControl() {Location = new Point(100, 50), Size = new Size(100,100)};
             container.BackgroundImage = new Bitmap(img, 100, 100);
 
-            btn.Click += (sender, args) => gameForm.Engine.LoadLevel(1);
+            btn.Click += (sender, args) => gameForm.Engine.PlayLevel(1, form);
             form.Controls.Add(btn);
             form.Controls.Add(container);
         }

@@ -3,16 +3,14 @@
   <Class Name="TowerDeffence.Engine.Engine" Collapsed="true">
     <Position X="10" Y="8" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAAAAAAAAAAAoCAAAAAAQAQAAAAAAAAAAACAAQIAAAA=</HashCode>
+      <HashCode>BAAAAAAAAABAICAAAAAAQAQAAAgAAAAAAACCAQAAAAA=</HashCode>
       <FileName>Engine\Engine.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Player" />
       <Property Name="GamePlayfield" />
-      <Property Name="BattleUnitDecorator" />
       <Property Name="InteractionManager" />
       <Property Name="CollisionHandler" />
-      <Property Name="EnemyUnitFactory" />
       <Property Name="Renderer" />
     </ShowAsAssociation>
   </Class>
@@ -58,7 +56,7 @@
   <Class Name="TowerDeffence.GameObjects.GamePlayfield" Collapsed="true">
     <Position X="19.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAABAAAIAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
       <FileName>GameObjects\GamePlayfield.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -90,7 +88,7 @@
   <Class Name="TowerDeffence.GameObjects.Player" Collapsed="true">
     <Position X="17" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAQAAAAAAAAAAAAAAAAAAQAAAIAAAACAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\Player.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -181,7 +179,7 @@
   <Class Name="TowerDeffence.Helpers.RangeCollisionHandler" Collapsed="true">
     <Position X="7.25" Y="8.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Helpers\RangeCollisionHandler.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -293,6 +291,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Interfaces\IRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TowerDeffence.Interfaces.IEnemyUnit" Collapsed="true">
+    <Position X="1.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IEnemyUnit.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="TowerDeffence.GameObjects.UnitSize" Collapsed="true">

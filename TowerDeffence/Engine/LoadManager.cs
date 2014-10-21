@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using TowerDeffence.Helpers;
 
 namespace TowerDeffence.Engine
 {
@@ -9,7 +10,26 @@ namespace TowerDeffence.Engine
 
     public class LoadManager
     {
-        public static IEnumerable<object> LoadLevelDataXml(int level)
+        private static LoadManager instance;
+
+        private LoadManager()
+        {
+            
+        }
+
+        public static LoadManager Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new LoadManager();
+                }
+                return instance;
+            }
+        }
+
+        public IEnumerable<EnemyData> LoadEnemyDataXml(int level)
         {
             XDocument levelDocument = XDocument.Load(@"..\..\Files\levels.xml");
 
@@ -17,31 +37,31 @@ namespace TowerDeffence.Engine
 
             var enemies = levelData.Descendants("Enemy");
 
-            var enemiesData = from enemy in enemies
-                              select new
-                              {
-                                  Count = enemy.Element("Count").Value,
-                                  Size = enemy.Element("Size").Value,
-                                  Health = enemy.Element("Health").Value,
-                                  Price = enemy.Element("Price").Value,
-                                  Speed = enemy.Element("Speed").Value
-                              };
-
-            if (levelData.Equals(null))
+            var enemiesData = enemies.Select(enemy => new EnemyData
             {
-                throw new ArgumentNullException(enemiesData.ToString());
+                Count = int.Parse(enemy.Element("Count").Value),
+                Bounty = int.Parse(enemy.Element("Bounty").Value),
+                Health = int.Parse(enemy.Element("Health").Value),
+                Size = enemy.Element("Size").Value,
+                Speed = int.Parse(enemy.Element("Speed").Value),
+                Type = enemy.Element("Type").Value,
+            });
+
+            if (levelData.Equals(null) || enemiesData.Count(el => !el.Equals(null)) == 0)
+            {
+                throw new ArgumentNullException(level.ToString());
             }
 
             return enemiesData;
         }
 
-        public static Image LoadImage(string path)
+        public Image LoadImage(string path)
         {
             var img = new Bitmap(path);
             return img;
         }
 
-        public static Image LoadImage(string path, int width, int height)
+        public Image LoadImage(string path, int width, int height)
         {
             var img = new Bitmap(path);
             var resizedImg = new Bitmap(img, width, height);
