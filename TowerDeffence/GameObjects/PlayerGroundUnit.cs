@@ -16,21 +16,17 @@ namespace TowerDeffence.GameObjects
 
         public double FireRate { get; private set; }
 
-        public PlayerGroundUnit(int price, Position position) : base (price,position)
+        public string Type { get; private set; } //Ground / Air
+
+        public PlayerGroundUnit(int price, Position position, double range, double damage, double fireRate, string type)
+            : base(price, position)
         {
             this.Price = price;
             this.Position = position;
-        }
-        public virtual void Upgrade()
-        {
-            this.Damage += 10;
-            this.FireRate += 15;
-            this.Range += 10;
-        }
-
-        public override void Draw()
-        {
-            throw new System.NotImplementedException();
+            this.Range = range;
+            this.Damage = damage;
+            this.FireRate = fireRate;
+            this.Type = type;
         }
     }
 }

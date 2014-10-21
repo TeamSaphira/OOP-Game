@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Turrets>
 	<Turret>
-                <Name></Name>
+                <Name>TheGreatTower</Name>
 		<Type>Ground</Type><!-- Ground / Air -->
 		<Damage>10</Damage>
 		<Range>100</Range>
@@ -9,7 +9,7 @@
                 <Price>Free</Price>
 	</Turret>
         <Turret>
-                <Name></Name>
+                <Name>TheDarkTower</Name>
 		<Type>Air</Type><!-- Ground / Air -->
 		<Damage>20</Damage>
 		<Range>170</Range>
@@ -17,7 +17,7 @@
                 <Price>100</Price>
 	</Turret>
         <Turret>
-                <Name></Name>
+                <Name>AbusGunTower</Name>
 		<Type>Ground</Type><!-- Ground / Air -->
 		<Damage>25</Damage>
 		<Range>170</Range>
@@ -25,7 +25,7 @@
                 <Price>200</Price>
 	</Turret>
         <Turret>
-                <Name></Name>
+                <Name>ArrowTower</Name>
 		<Type>Air</Type><!-- Ground / Air -->
 		<Damage>30</Damage>
 		<Range>170</Range>
@@ -33,7 +33,7 @@
                 <Price>200</Price>
 	</Turret>
         <Turret>
-                <Name></Name>
+                <Name>BallistaTower</Name>
 		<Type>Ground</Type><!-- Ground / Air -->
 		<Damage>20</Damage>
 		<Range>140</Range>
@@ -41,7 +41,7 @@
                 <Price>250</Price>
 	</Turret>
         <Turret>
-                <Name></Name>
+                <Name>CatapultTower</Name>
 		<Type>Ground</Type><!-- Ground / Air -->
 		<Damage>70</Damage>
 		<Range>140</Range>
@@ -49,7 +49,7 @@
                 <Price>290</Price>
 	</Turret>
         <Turret>
-                <Name></Name>
+                <Name>DragonTower</Name>
 		<Type>Air</Type><!-- Ground / Air -->
 		<Damage>30</Damage>
 		<Range>150</Range>
@@ -57,7 +57,7 @@
                 <Price>300</Price>
 	</Turret>
          <Turret>
-                <Name></Name>
+                <Name>SiegeTower</Name>
 		<Type>Air</Type><!-- Ground / Air -->
 		<Damage>30</Damage>
 		<Range>150</Range>
@@ -66,7 +66,7 @@
 	</Turret>
         
         <Turret>
-                <Name></Name>
+                <Name>RangerPost</Name>
 		<Type>Air</Type><!-- Ground / Air -->
 		<Damage>60</Damage>
 		<Range>200</Range>
@@ -74,7 +74,7 @@
                 <Price>400</Price>
 	</Turret>
         <Turret>
-                <Name></Name>
+                <Name>the lord of the towers</Name>
 		<Type>Ground</Type><!-- Ground / Air -->
 		<Damage>100</Damage>
 		<Range>250</Range>
