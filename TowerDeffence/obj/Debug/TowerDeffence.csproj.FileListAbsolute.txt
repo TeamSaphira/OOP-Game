@@ -1,0 +1,9 @@
+C:\Users\Breeze\Desktop\OOP-Game.git\branches\GameMap\TowerDeffence\bin\Debug\TowerDeffence.exe.config
+C:\Users\Breeze\Desktop\OOP-Game.git\branches\GameMap\TowerDeffence\obj\Debug\TowerDeffence.csprojResolveAssemblyReference.cache
+C:\Users\Breeze\Desktop\OOP-Game.git\branches\GameMap\TowerDeffence\obj\Debug\TowerDeffence.MainForm.resources
+C:\Users\Breeze\Desktop\OOP-Game.git\branches\GameMap\TowerDeffence\obj\Debug\TowerDeffence.Properties.Resources.resources
+C:\Users\Breeze\Desktop\OOP-Game.git\branches\GameMap\TowerDeffence\obj\Debug\TowerDeffence.csproj.GenerateResource.Cache
+C:\Users\Breeze\Desktop\OOP-Game.git\branches\GameMap\TowerDeffence\bin\Debug\TowerDeffence.exe
+C:\Users\Breeze\Desktop\OOP-Game.git\branches\GameMap\TowerDeffence\bin\Debug\TowerDeffence.pdb
+C:\Users\Breeze\Desktop\OOP-Game.git\branches\GameMap\TowerDeffence\obj\Debug\TowerDeffence.exe
+C:\Users\Breeze\Desktop\OOP-Game.git\branches\GameMap\TowerDeffence\obj\Debug\TowerDeffence.pdb
