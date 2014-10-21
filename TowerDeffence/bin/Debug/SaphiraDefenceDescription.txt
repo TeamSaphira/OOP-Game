@@ -1,0 +1,6 @@
+Saphira Defence is a game of type Tower Defence and it's created by Saphira OOP Team. 
+The goal of tower defense games is to try to stop enemies from crossing a map by building traps to 
+slow them down and towers which shoot at them as they pass. Enemies and towers usually have varied abilities, 
+costs, and upgrade prices. When an enemy is defeated, the player earns money or points, 
+which are used to buy or upgrade towers, or upgrade the number of money or points that are earned,
+or even upgrade the rate at which they upgrade.

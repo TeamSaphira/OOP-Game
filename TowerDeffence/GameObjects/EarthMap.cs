@@ -12,10 +12,10 @@
     {
         private int[,] levelMatrix; // This matrix represents numbers from text file of current level;
         public MapTile[,] MapTiles { get; set; }
-        public EarthMap(int width, int height, string fileName)
+        public EarthMap(int width, int height)
         {
             this.MapTiles = new MapTile[width, height];
-            FillMatrixFromFile(fileName);
+            //FillMatrixFromFile(fileName);
             FillMapWithTiles(this.levelMatrix);
         }
         public void FillMatrixFromFile(string fileName)
