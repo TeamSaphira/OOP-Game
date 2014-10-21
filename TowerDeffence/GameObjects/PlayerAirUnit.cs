@@ -6,10 +6,13 @@ namespace TowerDeffence.GameObjects
 
     public class PlayerAirUnit : AirUnit, ITower, IUpgradeable
     {
-        public PlayerAirUnit(int price, Position position) : base (price,position)
+        public PlayerAirUnit(int price, Position position, double range, double damage, double fireRate) : base (price,position)
         {
             this.Price = price;
             this.Position = position;
+            this.Range = range;
+            this.FireRate = fireRate;
+            this.Damage = damage;
         }
 
 

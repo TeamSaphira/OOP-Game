@@ -109,6 +109,18 @@ namespace TowerDeffence.Engine
             {
                 MessageBox.Show(enemyUnit.ToString());
             }
+
+            while (true)
+            {
+                //draw objects
+                //move
+                //shoot
+                //add money
+                //detect life loss
+                //game over/game end
+            }
+
+
         }
     }
 }
