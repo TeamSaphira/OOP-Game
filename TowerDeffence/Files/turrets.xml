@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <Turrets>
 	<Turret>
+                <Name></Name>
 		<Type></Type> <!-- Ground / Air -->
 		<Damage>10</Damage>
 		<Range>100</Range>
