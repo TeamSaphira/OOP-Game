@@ -4,14 +4,20 @@
 
     public class GamePlayfield : GameObject
     {
-        public IMap Map
+        public IMap Map { get; set; }
+
+        public void Init()
         {
-            get
+            // load map data
+            var map = new EarthMap(); // loaded data
+            AddMap(map);
+        }
+
+        private void AddMap(IMap map)
+        {
+            if (this.Map != null)
             {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
+                this.Map = map;
             }
         }
     }

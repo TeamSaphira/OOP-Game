@@ -1,10 +1,6 @@
-﻿using System;
-
-namespace TowerDeffenceTests
+﻿namespace TowerDeffenceTests
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-    using TowerDeffence.Engine;
 
     [TestClass]
     public class DataLoaderTests

@@ -2,7 +2,8 @@
 {
     using System;
     using System.Windows.Forms;
-    using TowerDeffence.Interfaces;
+
+    using Interfaces;
     public class KeyboardMouseUserInput : IUserInputHandler
     {
         public event EventHandler PressedZ; // Build tower
@@ -58,31 +59,37 @@
             switch (e.KeyCode)
             {
                 case Keys.Z:
-                    if (this.PressedZ != null)
                     {
-                        this.PressedZ(this, new EventArgs());
+                        if (this.PressedZ != null)
+                        {
+                            this.PressedZ(this, new EventArgs());
+                        }
+                        break;
                     }
-                    break;
                 case Keys.X:
-                    if (this.PressedX != null)
                     {
-                        this.PressedX(this, new EventArgs());
+                        if (this.PressedX != null)
+                        {
+                            this.PressedX(this, new EventArgs());
+                        }
+                        break;
                     }
-                    break;
                 case Keys.C:
-                    if (this.PressedC != null)
                     {
-                        this.PressedC(this, new EventArgs());
+                        if (this.PressedC != null)
+                        {
+                            this.PressedC(this, new EventArgs());
+                        }
+                        break;
                     }
-                    break;
                 case Keys.V:
-                    if (this.PressedV != null)
                     {
-                        this.PressedV(this, new EventArgs());
+                        if (this.PressedV != null)
+                        {
+                            this.PressedV(this, new EventArgs());
+                        }
+                        break;
                     }
-                    break;
-                default:
-                    break;
             }
         }
     }

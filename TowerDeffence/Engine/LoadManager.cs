@@ -37,9 +37,16 @@ namespace TowerDeffence.Engine
 
         public static Image LoadImage(string path)
         {
-            // load image
+            var img = new Bitmap(path);
+            return img;
+        }
 
-            return new Bitmap(1,1);
+        public static Image LoadImage(string path, int width, int height)
+        {
+            var img = new Bitmap(path);
+            var resizedImg = new Bitmap(img, width, height);
+
+            return resizedImg;
         }
     }
 }

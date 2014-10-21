@@ -4,8 +4,6 @@ namespace TowerDeffence.GameObjects
 {
     using Interfaces;
 
-    using System.Collections.Generic;
-
     public class PlayerGroundUnit : GroundUnit, ITower, IUpgradeable
     {
         public TowerState TowerState { get; set; }

@@ -72,12 +72,7 @@
     <Compile Include="GameObjects\TowerState.cs" />
     <Compile Include="GameObjects\TowerTile.cs" />
     <Compile Include="GameObjects\UnitSize.cs" />
-    <Compile Include="Graphics\AirUnitRenderer.cs" />
-    <Compile Include="Graphics\EnemyAirUnitRenderer.cs" />
-    <Compile Include="Graphics\EnemyGroundRenderer.cs" />
-    <Compile Include="Graphics\GroundUnitRenderer.cs" />
-    <Compile Include="Graphics\PlayerAirUnitRenderer.cs" />
-    <Compile Include="Graphics\PlayerGroundUnitRenderer.cs" />
+    <Compile Include="Graphics\Renderer.cs" />
     <Compile Include="Graphics\ScreenRenderer.cs" />
     <Compile Include="GameObjects\GroundUnit.cs" />
     <Compile Include="Helpers\BattleUnitDecorator.cs" />
@@ -112,9 +107,18 @@
     <Compile Include="Helpers\Position.cs" />
     <Compile Include="GameWindowScript.cs" />
     <Compile Include="Helpers\KeyboardMouseUserInput.cs" />
+    <Compile Include="LoadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GameWindow.resx">
       <DependentUpon>GameWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -125,6 +129,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="GameDiagram.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

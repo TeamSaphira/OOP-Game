@@ -1,11 +1,9 @@
 ﻿namespace TowerDeffence.GameObjects
 {
     using Interfaces;
-    using System;
 
     public class Player : GameObject, IPlayer
     {
-        private int lives;
 
         public Player(string name, int lives, double balance)
         {
@@ -14,19 +12,9 @@
             this.Money = balance;
         }
 
-        public int Lives 
-        {
-            get
-            {
-                return this.lives;
-            }
-            protected set
-            {
-                this.lives = value;
-            }
-        }
+        public int Lives { get; protected set; }
 
-        public string Name { get; protected set; }
+        public string Name { get; set; }
 
         public double Money { get; protected set; }
 
