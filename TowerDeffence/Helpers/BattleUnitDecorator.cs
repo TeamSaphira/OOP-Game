@@ -5,10 +5,13 @@
 
     public abstract class BattleUnitDecorator : IBattleUnit
     {
-        protected BattleUnitDecorator()
+        
+        protected BattleUnitDecorator(IBattleUnit battleUnit)
         {
-            
+            this.BattleUnit = battleUnit;
         }
+
+        public IBattleUnit BattleUnit { get; set; }
 
         public UnitSize Size
         {

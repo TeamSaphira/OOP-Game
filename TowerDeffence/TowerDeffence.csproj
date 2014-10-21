@@ -81,8 +81,12 @@
     <Compile Include="GameObjects\GroundUnit.cs" />
     <Compile Include="Helpers\BattleUnitDecorator.cs" />
     <Compile Include="Helpers\CollisionHandler.cs" />
-    <Compile Include="Helpers\DamageUpgradeDecorator.cs" />
+    <Compile Include="Helpers\TowerDamageUpgradeDecorator.cs" />
+    <Compile Include="Helpers\EnemyMovementSpeedDecorator.cs" />
+    <Compile Include="Helpers\EnemyTakeDamageDecorator.cs" />
+    <Compile Include="Helpers\EnemyUnitDecorator.cs" />
     <Compile Include="Helpers\EnemyUnitFactory.cs" />
+    <Compile Include="Helpers\EnemyUnitSizeDecorator.cs" />
     <Compile Include="Helpers\GameException.cs" />
     <Compile Include="Helpers\IntersectionCollisionHandler.cs" />
     <Compile Include="Helpers\InvalidBuildPositionException.cs" />
@@ -91,6 +95,7 @@
     <Compile Include="Helpers\PlayerLivesDecorator.cs" />
     <Compile Include="Helpers\PlayerAddMoneyDecorator.cs" />
     <Compile Include="Helpers\PlayerRemoveMoneyDecorator.cs" />
+    <Compile Include="Helpers\PlayerUnitDecorator.cs" />
     <Compile Include="Helpers\RangeCollisionHandler.cs" />
     <Compile Include="Helpers\UnitOnDeathHandler.cs" />
     <Compile Include="Interfaces\IBattleUnit.cs" />
