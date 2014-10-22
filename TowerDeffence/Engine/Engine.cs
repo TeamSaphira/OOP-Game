@@ -105,10 +105,14 @@
             return turretsList;
         }
 
+        public void InitLevel(int level)
+        {
+            this.BattleUnits = InitEnemies(level);   
+        }
+
         public void PlayLevel(int level, Form form)
         {
-            this.BattleUnits = InitEnemies(level);
-
+            InitLevel(level);
             form.Controls.Clear();
 
             timer.Tick += (sender, args) => NextFrame(form);
@@ -119,6 +123,12 @@
             form.Controls.Clear();
             var l = new Label() {Location = new Point(100,new Random().Next(0, 800))};
             form.Controls.Add(l);
+
+            foreach (var battleUnit in BattleUnits)
+            {
+                var pos = InteractionManager.GetNextPosition(GamePlayfield.Map, battleUnit);
+                
+            }
         }
     }
 }

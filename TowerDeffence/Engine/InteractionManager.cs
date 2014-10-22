@@ -1,14 +1,13 @@
-﻿using System.Drawing.Text;
-using System.IO;
-using TowerDeffence.Properties;
-
-namespace TowerDeffence.Engine
+﻿namespace TowerDeffence.Engine
 {
     using System.Drawing;
+    using System.Drawing.Text;
+    using System.IO;
     using System.Windows.Forms;
-
+    
     using Helpers;
     using Interfaces;
+    using Properties;
 
     public class InteractionManager
     {
@@ -17,9 +16,6 @@ namespace TowerDeffence.Engine
         public void ShowGameMenu(Form form)
         {
             var gameForm = InitForm(form);
-            //get image from loader
-            // draw image
-            // add buttons
 
             var startBtn = new Button { Text = @"Start Game", Location = new Point(300, 225), Size = new Size(200, 50)};
             startBtn.Click += (sender, args) => gameForm.Engine.PlayLevel(1, gameForm);
@@ -32,15 +28,25 @@ namespace TowerDeffence.Engine
             form.Controls.Add(exitBtn);
         }
 
-        public Position GetNextPosition(IMap map, IEnemyUnit unit)
+        public Position GetNextPosition(IMap map, object unit)
         {
-            // todo
-            return new Position(0, 0); // seems legit :)
+            var unitPosX = ((IPositionable) unit).Position.X;
+            var unitPosY = ((IPositionable)unit).Position.Y;
+
+            for (int i = 0; i < map.MapTiles.GetLength(0); i++)
+            {
+                for (int j = 0; j < map.MapTiles.GetLength(1); j++)
+                {
+                    var currentTile = map.MapTiles[i, j];
+                    var currentTilePosition = currentTile.Position;
+                }
+            }
+            return new Position(0,0);
         }
 
         public void ShowHighscore()
         {
-            throw new System.NotImplementedException();
+            MessageBox.Show(@"Highscore");
         }
 
         private static Font InitFont(string fileName)
