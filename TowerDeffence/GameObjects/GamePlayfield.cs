@@ -1,23 +1,42 @@
-﻿namespace TowerDeffence.GameObjects
+﻿using System;
+using TowerDeffence.Engine;
+
+namespace TowerDeffence.GameObjects
 {
     using Interfaces;
 
     public class GamePlayfield : GameObject
     {
-        public IMap Map { get; set; }
-
-        public void Init()
+        public GamePlayfield(int width, int height)
         {
-            // load map data
-            //var map = new EarthMap(); // loaded data
-            //AddMap(map);
+            this.Map = new EarthMap(width, height);
+            InitMapTiles();
         }
 
-        private void AddMap(IMap map)
+        public IMap Map { get; set; }
+
+        private void InitMapTiles()
         {
-            if (this.Map != null)
+            var mapValues = LoadManager.Instance.FillMapFromFile();
+            this.Map.MapTiles = new MapTile[mapValues.Count, mapValues[0].Count];
+            for (int i = 0; i < mapValues.Count; i++)
             {
-                this.Map = map;
+                for (int j = 0; j < mapValues[i].Count; j++)
+                {
+                    int currentValue = mapValues[i][j];
+                    if (currentValue == 1)
+                    {
+                        //todo
+                    }
+                    else if (currentValue == 0)
+                    {
+                        //todo
+                    }
+                    else
+                    {
+                        throw new FormatException("Bad map values.");
+                    }
+                }
             }
         }
     }

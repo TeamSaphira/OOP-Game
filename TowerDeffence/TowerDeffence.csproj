@@ -133,6 +133,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Files\Font\MATURASC.TTF" />
+    <None Include="Files\map.csv" />
     <None Include="GameDiagram.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -28,12 +28,10 @@ namespace TowerDeffence
             var player = new Player("unnamed", 10, 500);
             var inputHandler = new KeyboardMouseUserInput(this);
             inputHandler.PressedC += (sender, args) => MessageBox.Show(@"c pressed");
-            var playfield = new GamePlayfield();
+            var playfield = new GamePlayfield(800, 600);
 
             this.Engine = new Engine.Engine(player, inputHandler, playfield, new InteractionManager(),
                 new RangeCollisionHandler());
-
-            playfield.Init();
 
             InitializeComponent();
             loadingThread.Abort();

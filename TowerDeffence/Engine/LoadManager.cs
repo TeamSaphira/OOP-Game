@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Drawing;
+    using System.IO;
     using System.Linq;
     using System.Xml.Linq;
 
@@ -11,6 +12,7 @@
     public class LoadManager
     {
         private static LoadManager instance;
+        private const string FilePath = @"..\..\Files\map.csv";
 
         private LoadManager()
         {
@@ -94,6 +96,24 @@
             var resizedImg = new Bitmap(img, width, height);
 
             return resizedImg;
+        }
+
+        public List<List<int>> FillMapFromFile()
+        {
+            var mapMatrix = new List<List<int>>();
+
+            
+            string input = File.ReadAllText(FilePath);
+            string[] inputLines = input.Split(new[] {'\n', '\r'}, StringSplitOptions.RemoveEmptyEntries);
+
+            foreach (var line in inputLines)
+            {
+                string[] lineParts = line.Split(new[] {','}, StringSplitOptions.RemoveEmptyEntries);
+                var row = lineParts.Select(int.Parse).ToList();
+                mapMatrix.Add(row);
+            }
+
+            return mapMatrix;
         }
     }
 }

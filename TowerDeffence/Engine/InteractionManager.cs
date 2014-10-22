@@ -38,7 +38,7 @@
                 for (int j = 0; j < map.MapTiles.GetLength(1); j++)
                 {
                     var currentTile = map.MapTiles[i, j];
-                    var currentTilePosition = currentTile.Position;
+                    //var currentTilePosition = currentTile.Position;
                 }
             }
             return new Position(0,0);
