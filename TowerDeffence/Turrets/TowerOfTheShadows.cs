@@ -10,8 +10,8 @@ namespace TowerDeffence.Turrest
 {
     class TowerOfTheShadows : PlayerGroundUnit
     {
-        public TowerOfTheShadows(int price, Position position, double range, double damage, double fireRate, string type)
-            : base(price, position, range, damage, fireRate, type)
+        public TowerOfTheShadows(int price, Position position, double range, double damage, double fireRate)
+            : base(price, position, range, damage, fireRate)
         {
 
         }

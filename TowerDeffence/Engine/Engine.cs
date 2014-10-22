@@ -1,28 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
-using TowerDeffence.Helpers;
-
-namespace TowerDeffence.Engine
+﻿namespace TowerDeffence.Engine
 {
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel;
+    using System.Linq;
+    using System.Windows.Forms;
+
     using GameObjects;
     using Interfaces;
+    using Helpers;
+    using Helpers.Player;
+    using Helpers.Enemies;
 
     public class Engine
     {
-        public Engine(IPlayer player, IUserInputHandler userInputController, GamePlayfield gamePlayfield, IInteractionManager interactionManager, ICollisionHandler collisionHandler, IRenderer renderer)
+        private const int TimeInterval = 100;
+        private static readonly Position GroundSpawnPosition = new Position(100, -25);
+        private static readonly Position AirSpawnPosition = new Position(-25, 300);
+        private static readonly Position DefaultPosition = new Position(0,0);
+
+        public Engine(IPlayer player, IUserInputHandler userInputController, GamePlayfield gamePlayfield, InteractionManager interactionManager, ICollisionHandler collisionHandler)
         {
             Player = player;
             UserInputController = userInputController;
             GamePlayfield = gamePlayfield;
             InteractionManager = interactionManager;
             CollisionHandler = collisionHandler;
-            Renderer = renderer;
 
-            this.BattleUnits = new Collection<IBattleUnit>();
+            this.BattleUnits = new List<object>();
+            this.TurretUnits = new List<object>();
         }
 
         public IPlayer Player { get; private set; }
@@ -31,96 +37,82 @@ namespace TowerDeffence.Engine
 
         public GamePlayfield GamePlayfield { get; private set; }
 
-        public IInteractionManager InteractionManager { get; set; }
+        public InteractionManager InteractionManager { get; set; }
 
         public ICollisionHandler CollisionHandler { get; private set; }
 
-        public IRenderer Renderer { get; private set; }
+        private IList<object> BattleUnits { get; set; }
 
-        private ICollection<IBattleUnit> BattleUnits { get; set; }
+        private IList<object> TurretUnits { get; set; }
 
         public void InitGame()
         {
-            
+            this.TurretUnits = InitTurrets();
         }
 
-        public IList<IEnumerable<object>> InitLevel(int level)
+        public IList<object> InitEnemies(int level)
         {
-            var levelList = new List<IEnumerable<object>>();
-
-            var loader = LoadManager.Instance;
-            var enemyData = loader.LoadEnemyDataXml(level);
-
-            var enemyDataLoaded = new List<object>();
-            foreach (var data in enemyData)
-            {
-                enemyDataLoaded.Add(data);
-            }
-
-            levelList.Add(enemyDataLoaded);
-
-            return levelList;
-        }
-
-        public IList<IEnemyUnit> CreateEnemiesCollection(IList<IEnumerable<object>> data)
-        {
-            var enemies = new List<IEnemyUnit>();
+            var enemiesList = new List<object>();
             var enemyFactory = new EnemyUnitFactory();
-            foreach (var d in data)
+            var loadedData = LoadManager.Instance.LoadEnemyDataXml(level);
+            foreach (var enemyData in loadedData)
             {
-                foreach (var enemy in d)
+                UnitSize size;
+                if (!Enum.TryParse(enemyData.Size, true, out size))
                 {
-                    var enemyData = enemy as EnemyData;
-                    if (enemyData != null)
-                    {
+                    throw new InvalidEnumArgumentException(@"Unit size is invalid.");
+                }
 
-                        var currentEnemy = enemyData;
-                        IEnemyUnit battleUnit = null;
-
-                        UnitSize size;
-                        if (!Enum.TryParse(currentEnemy.Size, true, out size))
-                        {
-                            throw new FormatException();
-                        }
-
-                        if (currentEnemy.Type.ToLower() == "air")
-                        {
-                            battleUnit = enemyFactory.CreateEnemyAirUnit(size, currentEnemy.Health, currentEnemy.Bounty, currentEnemy.Speed, new Position(0, 0));
-                        }
-                        else if (currentEnemy.Type.ToLower() == "ground")
-                        {
-                            battleUnit = enemyFactory.CreateEnemyGroundUnit(size, currentEnemy.Health, currentEnemy.Bounty, currentEnemy.Speed, new Position(0, 0));
-                        }
-                        enemies.Add(battleUnit);
-                    }
+                if (enemyData.Type.ToLower().Equals("ground"))
+                {
+                    var groundUnits = enemyFactory.CreateEnemyGroundUnitByCount(size, enemyData.Health, enemyData.Bounty, enemyData.Speed, GroundSpawnPosition, enemyData.Count);
+                    enemiesList.AddRange(groundUnits.Cast<object>());
+                }
+                else if (enemyData.Type.ToLower().Equals("air"))
+                {
+                    var airUnits = enemyFactory.CreateEnemyAirUnitByCount(size, enemyData.Health, enemyData.Bounty, enemyData.Speed, AirSpawnPosition, enemyData.Count);
+                    enemiesList.AddRange(airUnits.Cast<object>());
                 }
             }
 
-            return enemies;
+            return enemiesList;
+        }
+
+        public IList<object> InitTurrets()
+        {
+            var turretsList = new List<object>();
+            var turretFactory = new PlayerUnitFactory();
+            var loadedTurretData = LoadManager.Instance.LoadTurretDataXml();
+
+            foreach (var turretData in loadedTurretData)
+            {
+                if (turretData.Type.ToLower().Equals("air"))
+                {
+                    var airTower = turretFactory.CreatePlayerAirUnit(turretData.Price, DefaultPosition, turretData.Range, turretData.Damage, turretData.FireRate);
+                    turretsList.Add(airTower);
+                }
+                else if (turretData.Type.ToLower().Equals("ground"))
+                {
+                    var groundTower = turretFactory.CreatePlayerGroundUnit(turretData.Price, DefaultPosition, turretData.Range, turretData.Damage, turretData.FireRate);
+                    turretsList.Add(groundTower);
+                }
+            }
+            return turretsList;
         }
 
         public void PlayLevel(int level, Form form)
         {
+            this.BattleUnits = InitEnemies(level);
+
             form.Controls.Clear();
-            var data = InitLevel(level);
-            var enemies = CreateEnemiesCollection(data);
 
-            foreach (var enemyUnit in enemies)
-            {
-                MessageBox.Show(enemyUnit.ToString());
-            }
-
-            while (true)
-            {
-                //draw objects
-                //move
-                //shoot
-                //add money
-                //detect life loss
-                //game over/game end
-            }
-
-
+            var timer = new Timer { Interval = TimeInterval };
+            timer.Tick += (sender, args) => NextFrame(form);
+            timer.Start();
+        }
+        private void NextFrame(Form form)
+        {
+            //MessageBox.Show(@"next");
         }
     }
 }

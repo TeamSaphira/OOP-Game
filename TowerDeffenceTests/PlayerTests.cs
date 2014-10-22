@@ -1,9 +1,10 @@
 ﻿namespace TowerDeffenceTests
 {
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+
     using TowerDeffence.Interfaces;
     using TowerDeffence.GameObjects;
-    using TowerDeffence.Helpers;
+    using TowerDeffence.Helpers.Player;
 
     [TestClass]
     public class PlayerTests

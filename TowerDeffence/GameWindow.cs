@@ -31,7 +31,7 @@ namespace TowerDeffence
             var playfield = new GamePlayfield();
 
             this.Engine = new Engine.Engine(player, inputHandler, playfield, new InteractionManager(),
-                new RangeCollisionHandler(), new ScreenRenderer());
+                new RangeCollisionHandler());
 
             playfield.Init();
 
@@ -44,13 +44,9 @@ namespace TowerDeffence
             Application.Run(new LoadingScreen());
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void FormLoad(object sender, EventArgs e)
         {
-            //this.engine = new Engine.Engine();
-            //this.engine.InitGame();
-            //this.engine.InteractionManager.ShowGameMenu();
-            var t = new InteractionManager();
-            t.ShowGameMenu(this);
+            this.Engine.InitGame();
             this.Engine.InteractionManager.ShowGameMenu(this);
         }
     }

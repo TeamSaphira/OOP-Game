@@ -5,16 +5,15 @@
 
     public class PlayerUnitFactory : IPlayerUnitFactory
     {
-        //todo implement !!!
 
-        public PlayerAirUnit CreatePlayerAirUnit()
+        public PlayerAirUnit CreatePlayerAirUnit(int price, Position position, double range, double damage, double fireRate)
         {
-            throw new System.NotImplementedException();
+            return new PlayerAirUnit(price, position, range, damage, fireRate);
         }
 
-        public PlayerGroundUnit CreatePlayerGroundUnit()
+        public PlayerGroundUnit CreatePlayerGroundUnit(int price, Position position, double range, double damage, double fireRate)
         {
-            throw new System.NotImplementedException();
+            return new PlayerGroundUnit(price, position, range, damage, fireRate);
         }
     }
 }
