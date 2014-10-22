@@ -1,10 +1,84 @@
 <?xml version="1.0"?>
 <Turrets>
 	<Turret>
-                <Name></Name>
-		<Type></Type> <!-- Ground / Air -->
+                <Name>TheGreatTower</Name>
+		<Type>Ground</Type><!-- Ground / Air -->
 		<Damage>10</Damage>
 		<Range>100</Range>
+		<FireRate>1</FireRate> <!-- shots per second -->
+                <Price>Free</Price>
+	</Turret>
+        <Turret>
+                <Name>TheDarkTower</Name>
+		<Type>Air</Type><!-- Ground / Air -->
+		<Damage>20</Damage>
+		<Range>170</Range>
 		<FireRate>0.5</FireRate> <!-- shots per second -->
+                <Price>100</Price>
+	</Turret>
+        <Turret>
+                <Name>AbusGunTower</Name>
+		<Type>Ground</Type><!-- Ground / Air -->
+		<Damage>25</Damage>
+		<Range>170</Range>
+		<FireRate>0.5</FireRate> <!-- shots per second -->
+                <Price>200</Price>
+	</Turret>
+        <Turret>
+                <Name>ArrowTower</Name>
+		<Type>Air</Type><!-- Ground / Air -->
+		<Damage>30</Damage>
+		<Range>170</Range>
+		<FireRate>0.6</FireRate> <!-- shots per second -->
+                <Price>200</Price>
+	</Turret>
+        <Turret>
+                <Name>BallistaTower</Name>
+		<Type>Ground</Type><!-- Ground / Air -->
+		<Damage>20</Damage>
+		<Range>140</Range>
+		<FireRate>0.2</FireRate> <!-- shots per second -->
+                <Price>250</Price>
+	</Turret>
+        <Turret>
+                <Name>CatapultTower</Name>
+		<Type>Ground</Type><!-- Ground / Air -->
+		<Damage>70</Damage>
+		<Range>140</Range>
+		<FireRate>0.9</FireRate> <!-- shots per second -->
+                <Price>290</Price>
+	</Turret>
+        <Turret>
+                <Name>DragonTower</Name>
+		<Type>Air</Type><!-- Ground / Air -->
+		<Damage>30</Damage>
+		<Range>150</Range>
+		<FireRate>0.3</FireRate> <!-- shots per second -->
+                <Price>300</Price>
+	</Turret>
+         <Turret>
+                <Name>SiegeTower</Name>
+		<Type>Air</Type><!-- Ground / Air -->
+		<Damage>30</Damage>
+		<Range>150</Range>
+		<FireRate>0.3</FireRate> <!-- shots per second -->
+                <Price>310</Price>
+	</Turret>
+        
+        <Turret>
+                <Name>RangerPost</Name>
+		<Type>Air</Type><!-- Ground / Air -->
+		<Damage>60</Damage>
+		<Range>200</Range>
+		<FireRate>0.4</FireRate> <!-- shots per second -->
+                <Price>400</Price>
+	</Turret>
+        <Turret>
+                <Name>the lord of the towers</Name>
+		<Type>Ground</Type><!-- Ground / Air -->
+		<Damage>100</Damage>
+		<Range>250</Range>
+		<FireRate>0.2</FireRate> <!-- shots per second -->
+                <Price>900</Price>
 	</Turret>
 </Turrets>

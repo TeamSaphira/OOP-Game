@@ -114,6 +114,16 @@
       <DependentUpon>LoadingScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Turrets\AbusGunTower.cs" />
+    <Compile Include="Turrets\ArrowTower.cs" />
+    <Compile Include="Turrets\BallistaTower.cs" />
+    <Compile Include="Turrets\CatapultTower.cs" />
+    <Compile Include="Turrets\DragonTower.cs" />
+    <Compile Include="Turrets\RangerPost.cs" />
+    <Compile Include="Turrets\SiegeTower.cs" />
+    <Compile Include="Turrets\TheDarkTower.cs" />
+    <Compile Include="Turrets\TheGreatTower.cs" />
+    <Compile Include="Turrets\TowerOfTheShadows.cs" />
     <EmbeddedResource Include="GameWindow.resx">
       <DependentUpon>GameWindow.cs</DependentUpon>
     </EmbeddedResource>
