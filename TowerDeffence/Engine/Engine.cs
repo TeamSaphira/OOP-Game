@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
+    using System.Drawing;
     using System.Linq;
     using System.Windows.Forms;
 
@@ -14,10 +15,12 @@
 
     public class Engine
     {
-        private const int TimeInterval = 100;
+        private const int TimeInterval = 300;
         private static readonly Position GroundSpawnPosition = new Position(100, -25);
         private static readonly Position AirSpawnPosition = new Position(-25, 300);
         private static readonly Position DefaultPosition = new Position(0,0);
+
+        private static Timer timer;
 
         public Engine(IPlayer player, IUserInputHandler userInputController, GamePlayfield gamePlayfield, InteractionManager interactionManager, ICollisionHandler collisionHandler)
         {
@@ -29,6 +32,8 @@
 
             this.BattleUnits = new List<object>();
             this.TurretUnits = new List<object>();
+
+            timer = new Timer() {Interval = TimeInterval};
         }
 
         public IPlayer Player { get; private set; }
@@ -106,13 +111,14 @@
 
             form.Controls.Clear();
 
-            var timer = new Timer { Interval = TimeInterval };
             timer.Tick += (sender, args) => NextFrame(form);
             timer.Start();
         }
         private void NextFrame(Form form)
         {
-            //MessageBox.Show(@"next");
+            form.Controls.Clear();
+            var l = new Label() {Location = new Point(100,new Random().Next(0, 800))};
+            form.Controls.Add(l);
         }
     }
 }
