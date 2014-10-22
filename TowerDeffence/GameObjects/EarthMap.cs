@@ -51,12 +51,12 @@
                 {
                     if(levelMatrix[row, col] == 1)
                     {
-                        tile = new TowerTile();
+                        //tile = new TowerTile();
                     }
 
                     if(levelMatrix[row, col] == 0)
                     {
-                        tile = new PathTile();
+                        //tile = new PathTile();
                     }
                     
                     MapTiles[row, col] = tile;

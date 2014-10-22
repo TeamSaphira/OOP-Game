@@ -9,8 +9,8 @@
         public void Init()
         {
             // load map data
-            var map = new EarthMap(); // loaded data
-            AddMap(map);
+            //var map = new EarthMap(); // loaded data
+            //AddMap(map);
         }
 
         private void AddMap(IMap map)
