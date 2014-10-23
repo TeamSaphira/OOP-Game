@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4037C5DA-724C-4D89-8405-081B549BA81A}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TowerDeffence</RootNamespace>
+    <AssemblyName>TestGame</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Engine\Ngin.cs" />
+    <Compile Include="Engine\InteractionManager.cs" />
+    <Compile Include="Engine\LoadManager.cs" />
+    <Compile Include="GameObjects\AirUnit.cs" />
+    <Compile Include="GameObjects\BattleUnit.cs" />
+    <Compile Include="GameObjects\Bullet.cs" />
+    <Compile Include="GameObjects\EarthMap.cs" />
+    <Compile Include="GameObjects\EnemyAirUnit.cs" />
+    <Compile Include="GameObjects\EnemyGroundUnit.cs" />
+    <Compile Include="GameObjects\GameObject.cs" />
+    <Compile Include="GameObjects\GamePlayfield.cs" />
+    <Compile Include="GameObjects\GroundUnit.cs" />
+    <Compile Include="GameObjects\MapTile.cs" />
+    <Compile Include="GameObjects\PathTile.cs" />
+    <Compile Include="GameObjects\Player.cs" />
+    <Compile Include="GameObjects\PlayerAirUnit.cs" />
+    <Compile Include="GameObjects\PlayerGroundUnit.cs" />
+    <Compile Include="GameObjects\TowerState.cs" />
+    <Compile Include="GameObjects\TowerTile.cs" />
+    <Compile Include="GameObjects\UnitSize.cs" />
+    <Compile Include="Graphics\ConsoleDrawer.cs" />
+    <Compile Include="GameMain.cs" />
+    <Compile Include="Helpers\CollisionHandler.cs" />
+    <Compile Include="Helpers\ConsoleSettings.cs" />
+    <Compile Include="Helpers\Data\EnemyData.cs" />
+    <Compile Include="Helpers\Data\TurretData.cs" />
+    <Compile Include="Helpers\Enemies\BattleUnitDecorator.cs" />
+    <Compile Include="Helpers\Enemies\DamageUpgradeDecorator.cs" />
+    <Compile Include="Helpers\Enemies\EnemyUnitFactory.cs" />
+    <Compile Include="Helpers\GameException.cs" />
+    <Compile Include="Helpers\GameSettings.cs" />
+    <Compile Include="Helpers\IntersectionCollisionHandler.cs" />
+    <Compile Include="Helpers\InvalidBuildPositionException.cs" />
+    <Compile Include="Helpers\KeyboardMouseUserInput.cs" />
+    <Compile Include="Helpers\PlayerUnitDecorator.cs" />
+    <Compile Include="Helpers\Player\PlayerAddMoneyDecorator.cs" />
+    <Compile Include="Helpers\Player\PlayerDecorator.cs" />
+    <Compile Include="Helpers\Player\PlayerLivesDecorator.cs" />
+    <Compile Include="Helpers\Player\PlayerRemoveMoneyDecorator.cs" />
+    <Compile Include="Helpers\Player\PlayerUnitFactory.cs" />
+    <Compile Include="Helpers\Position.cs" />
+    <Compile Include="Helpers\RangeCollisionHandler.cs" />
+    <Compile Include="Helpers\UnitOnDeathHandler.cs" />
+    <Compile Include="Interfaces\IBattleUnit.cs" />
+    <Compile Include="Interfaces\ICollisionHandler.cs" />
+    <Compile Include="Interfaces\IDrawable.cs" />
+    <Compile Include="Interfaces\IEnemyUnit.cs" />
+    <Compile Include="Interfaces\IEnemyUnitFactory.cs" />
+    <Compile Include="Interfaces\IFireable.cs" />
+    <Compile Include="Interfaces\IMap.cs" />
+    <Compile Include="Interfaces\IMoveable.cs" />
+    <Compile Include="Interfaces\IPlayer.cs" />
+    <Compile Include="Interfaces\IPlayerUnitFactory.cs" />
+    <Compile Include="Interfaces\IPositionable.cs" />
+    <Compile Include="Interfaces\IRenderer.cs" />
+    <Compile Include="Interfaces\ITower.cs" />
+    <Compile Include="Interfaces\IUpgradeable.cs" />
+    <Compile Include="Interfaces\IUserInputHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GameObjects\Turrets\AbusGunTower.cs" />
+    <Compile Include="GameObjects\Turrets\ArrowTower.cs" />
+    <Compile Include="GameObjects\Turrets\BallistaTower.cs" />
+    <Compile Include="GameObjects\Turrets\CatapultTower.cs" />
+    <Compile Include="GameObjects\Turrets\DragonTower.cs" />
+    <Compile Include="GameObjects\Turrets\RangerPost.cs" />
+    <Compile Include="GameObjects\Turrets\SiegeTower.cs" />
+    <Compile Include="GameObjects\Turrets\TheDarkTower.cs" />
+    <Compile Include="GameObjects\Turrets\TheGreatTower.cs" />
+    <Compile Include="GameObjects\Turrets\TowerOfTheShadows.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Files\map.csv" />
+    <None Include="GameDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Files\authors.txt" />
+    <Content Include="Files\info.txt" />
+    <Content Include="Files\levels.xml" />
+    <Content Include="Files\menu.txt" />
+    <Content Include="Files\turrets.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
